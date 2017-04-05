@@ -1,0 +1,187 @@
+{
+    "id": "3",
+    "label": "Template Name 3",
+    "areas": [{
+            "selector": {
+                "type": "pulldown",
+                "name": "sel_skin",
+                "label": "Select the skin",
+                "value": "1",
+                "default": "1",
+                "options": [{
+                        "value": "1",
+                        "label": "Metal"
+                    }, {
+                        "value": "2",
+                        "label": "Liquid"
+                    }, {
+                        "value": "3",
+                        "label": "Blue"
+                    }]
+            }
+        }, {
+            "selector": {
+                "type": "active",
+                "name": "sel_width",
+                "label": "Select the message width:"
+            },
+            "blocks": [{
+                    "attr": [{
+                            "name": "wrapper_width",
+                            "type": "enum",
+                            "db_type": "string",
+                            "label": "wrapper width label",
+                            "default": "720",
+                            "value": "720",
+                            "options": [{
+                                    "label": "Big",
+                                    "value": "720"
+                                }, {
+                                    "label": "Medium",
+                                    "value": "640"
+                                }, {
+                                    "label": "Small",
+                                    "value": "480"
+                                }]
+                        }]
+                }]
+        }, {
+            "selector": {
+                "type": "active",
+                "name": "header_text",
+                "label": ""
+            },
+            "blocks": [{
+                    "attr": [{
+                            "name": "form_headline",
+                            "type": "string",
+                            "db_type": "string",
+                            "label": "Headline",
+                            "default": "Need help? We can call you.",
+                            "value": "Need help? We can call you."
+                        }]
+                }]
+        }, {
+            "selector": {
+                "type": "checkbox",
+                "name": "sel_intro",
+                "label": "Show the intro text",
+                "value": false,
+                "default": false
+            },
+            "blocks": [{
+                    "attr": [{
+                            "name": "form_introtext",
+                            "type": "text",
+                            "db_type": "text",
+                            "label": "Intro text",
+                            "default": "\n Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt \n ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation \n ullamco laboris nisi ut aliquip ex ea commodo consequat. \n quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n ",
+                            "value": "\n Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt \n ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation \n ullamco laboris nisi ut aliquip ex ea commodo consequat. \n quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n ",
+                            "depends_on": "sel_intro",
+                            "display_val": true
+                        }]
+                }]
+        }, {
+            "selector": {
+                "type": "checkbox",
+                "name": "sel_country_code",
+                "label": "Show Country Code List",
+                "value": false,
+                "default": false
+            },
+            "blocks": [{
+                    "attr": [{
+                            "name": "form_countrycode_label",
+                            "type": "string",
+                            "db_type": "string",
+                            "label": "Country Code Label",
+                            "default": "Country Code:",
+                            "value": "Country Code:",
+                            "depends_on": "sel_country_code",
+                            "display_val": true
+                        }, {
+                            "name": "form_opt1",
+                            "type": "string",
+                            "db_type": "string",
+                            "label": "opt1_1 label",
+                            "default": "49",
+                            "value": "49",
+                            "depends_on": "sel_country_code",
+                            "display_val": true
+                        }, {
+                            "name": "form_opt_text1",
+                            "type": "string",
+                            "db_type": "string",
+                            "label": "opt1_2 label",
+                            "default": "Germany (+49)",
+                            "value": "Germany (+49)",
+                            "depends_on": "sel_country_code",
+                            "display_val": true
+                        }, {
+                            "name": "form_opt2",
+                            "type": "string",
+                            "db_type": "string",
+                            "label": "opt2_1 label",
+                            "default": "44",
+                            "value": "44",
+                            "depends_on": "sel_country_code",
+                            "display_val": true
+                        }, {
+                            "name": "form_opt_text2",
+                            "type": "string",
+                            "db_type": "string",
+                            "label": "opt2_2 label",
+                            "default": "United Kingdom (+44)",
+                            "value": "United Kingdom (+44)",
+                            "depends_on": "sel_country_code",
+                            "display_val": true
+                        }]
+                }]
+        }, {
+            "selector": {
+                "type": "active",
+                "name": "sel_form_phone",
+                "label": ""
+            },
+            "blocks": [{
+                    "attr": [{
+                            "name": "form_phone_label",
+                            "type": "string",
+                            "db_type": "string",
+                            "label": "Phone Number Label",
+                            "default": "Phone Number:",
+                            "value": "Phone Number:"
+                        }, {
+                            "name": "form_phone_number",
+                            "type": "string",
+                            "db_type": "string",
+                            "label": "Phone Number Text",
+                            "default": "your phone number...",
+                            "value": "your phone number..."
+                        }]
+                }]
+        }, {
+            "selector": {
+                "type": "active",
+                "name": "sel_btns",
+                "label": ""
+            },
+            "blocks": [{
+                    "attr": [{
+                            "name": "form_cancel",
+                            "type": "string",
+                            "db_type": "string",
+                            "label": "Cancel Button",
+                            "default": "Cancel",
+                            "value": "Cancel"
+                        }, {
+                            "name": "form_submit",
+                            "type": "string",
+                            "db_type": "string",
+                            "label": "Submit Button",
+                            "default": "Send",
+                            "value": "Send"
+                        }]
+                }]
+        }]
+}

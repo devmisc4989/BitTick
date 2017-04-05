@@ -1,0 +1,647 @@
+.clear{
+    clear: both;
+}
+
+table {
+    border-collapse:separate;
+    border-spacing:0pt;
+}
+caption, th, td {
+    font-weight:normal;
+    text-align:left;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content:"";
+}
+blockquote, q {
+    quotes:"" "";
+}
+
+#backgroundPopup{
+    display:none;
+    position:fixed;
+    _position:absolute; /* hack for internet explorer 6*/
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    background:#000000;
+    border:1px solid #cecece;
+    z-index:1;
+}
+#popupContact{
+    display:none;
+    position:fixed;
+    _position:absolute; /* hack for internet explorer 6*/
+    width:820px;
+    margin: 5px 5px;
+    padding:20px;
+    background:#FFFFFF;
+    z-index:2;
+    font-size:13px;
+}
+
+#popupContactClose{
+    width:28px;
+    height:28px;
+    background:url(../images/icon_close.png) no-repeat;
+    position:absolute;
+    right:-10px;
+    top:-10px;
+    cursor:pointer;
+    display:block;
+}
+
+
+.confirmation{
+    width:740px;
+    float:left;
+    text-align:center;
+    padding:0px 20px;
+    position:relative;
+}
+.align-left{
+    text-align: left;
+}
+.confirmation h1{
+    /*font-family:'Trebuchet MS', Arial, Helvetica, sans-serif;*/
+    font-family: 'Ubuntu', sans-serif;
+    font-size:30px;
+    font-weight:bold;
+    color:#111;
+}
+
+.editor_confirm h1{
+    font-size: 20px;
+}
+
+.editor_confirm .ctrl-buttons{
+    margin-bottom: -20px;
+    padding-top: 15px;
+}
+
+.confirmation p{
+    width:740px;
+    float:left;
+    /*font-family:'Trebuchet MS', Arial, Helvetica, sans-serif;*/
+    font-family: 'Ubuntu', sans-serif;
+    font-size:21px;
+    font-weight:normal;
+    color:#555;
+    line-height:30px;
+    padding:15px 0 10px 0;
+}
+
+.button-container{
+    width:300px;
+    margin:0 auto;
+    text-align:center;
+}
+
+.confirmation-user{
+    width:700px;
+    float:left;
+    /*font-family:'Trebuchet MS', Arial, Helvetica, sans-serif;*/
+    font-family: 'Ubuntu', sans-serif;
+    font-size:14px;
+    text-align:left;
+    padding: 0 20px 10px;
+    overflow:hidden;
+}
+
+.confirmation-user label{
+    display: inline-block;
+    width:700px;
+    float:left;
+    /*font-family:'Trebuchet MS', Arial, Helvetica, sans-serif;*/
+    font-family: 'Ubuntu', sans-serif;
+    font-size:15px;
+    font-weight:bold;
+    color:#333;
+    padding:15px 0 0 0;
+}
+.blacktri .project_type_td label{
+    width: 98%;
+    padding-right: 2%;
+}
+
+.confirmation-radio{
+    width:700px;
+    float:left;
+    padding:10px 0;
+}
+
+.radio{
+    padding:0 20px 0 0;
+}
+
+.popup-textarea{
+    width:300px;
+    height:150px;
+    clear:both;
+}
+
+.pagecode-textarea{
+    width:700px;
+    height:200px;
+    clear:both;
+}
+
+.confirmation-field{
+    width: 46%;
+    margin: 5px 0 0;
+    padding: 2px 5% 5px 0;
+    float:left;
+}
+.cf-right.confirmation-field{
+    margin-left: 5px;
+    padding-right: 0;
+}
+
+/*********** dashboard ***************/
+.confirmation-user#ws1{
+    width: 575px;
+}
+#project_type_table{
+    display: table;
+}
+#project_type_table .project_type_tr{
+    display: table-row;
+}
+#project_type_table .project_type_td{
+    display: table-cell;
+}
+#project_type_table .confirmation-field input.button.testBtn{
+    float: none;
+    margin: 10px 0 0;
+}
+
+.large.confirmation-field{
+    width: 48%;
+}
+
+.confirmation-field input.button.testBtn{
+    width: 100%;
+}
+
+.disabled.confirmation-field label{
+    color: #0D6D9D;
+}
+
+.testype-rocket{
+    display: none;
+}
+
+a.hidden-link{
+    font-size: 1px !important;
+    height: 1px !important;
+    visibility: hidden;
+}
+
+input.disabled.ok.button,
+input.disabled.ok.button:hover{
+    background: #CCCCCC !important;
+    border-color: #CCCCCC;
+    color: #FFFFFF;
+    cursor: text;
+}
+
+.confirmation-field label span{
+    color:#57820c;
+}
+
+.popup-textinfo{
+    /*font-family:'Trebuchet MS', Arial, Helvetica, sans-serif;*/
+    font-family: 'Ubuntu', sans-serif;
+    font-size:12px;
+    color:#999;
+}
+
+.lp-button{
+    width:22px;
+    height:22px;
+    float:right;
+    margin:4px 2px 0 0;
+}
+
+.lp-button:hover{
+    background-position:0 -22px;
+    cursor:pointer;
+}
+
+.lp-add{
+    background:url(../images/lp_add.jpg) no-repeat;	
+}
+
+.lp-delete{
+    background:url(../images/lp_delete.png) no-repeat;
+}
+.lp-delete-cont{
+    float:left; width: 30px; left: 10px; padding-top: 16px;
+}
+
+.disabled.lp-delete,
+.disabled.lp-delete:hover{
+    background:url(../images/lp_delete.png) no-repeat;
+    cursor: text;
+}
+
+.addvariant a.disabled,
+.addvariant a.disabled:hover{
+    background: url("../images/lp_add.jpg") no-repeat scroll 0 0;
+    opacity: 0.8;
+    text-decoration: none;
+    cursor: text;
+}
+
+#restartCollection{
+    width:780px;
+    margin: 5px 5px;
+    padding:20px;
+    background:#FFFFFF;
+    z-index:2;
+    font-size:18px;
+}
+.clearall{
+    clear:both;
+}
+.w100
+{
+    width:100%;
+}
+.w95
+{
+    width:95%;
+}
+.w90
+{
+    width:90%;
+}
+.w93
+{
+    width:93%;
+}
+.conversion_goals label {
+    padding-top:5px;
+}
+
+
+/* FANCY BOX */
+
+#fancybox-bg-n, #fancybox-bg-ne, #fancybox-bg-e, #fancybox-bg-se, #fancybox-bg-s, #fancybox-bg-sw, #fancybox-bg-nw, #fancybox-bg-w{
+    background-image:none;
+}
+#fancybox-outer {
+    /*border:2px #222222 solid;*/
+}
+#fancybox-close{
+    background:url(../images/fancy_box_close.png) center center no-repeat;
+    top:-12px;
+    right:-12px;
+}
+/* FANCY BOX END */
+
+#sms_ui{
+    /*width: 784px;*/
+    width: 100%;
+    position: absolute;
+    /*top: 40px;
+    left: 50%;
+    margin-left: -392px;*/
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /*height: 80%;*/
+    z-index: 5000;
+    display: none;
+}
+
+#sms_ui_frame{
+    /* width: 784px;
+     height: 750px;*/
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+#full_editor_overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3000;
+    background: white;
+    opacity: .7;
+    display: none;
+
+}
+
+/** FOR test Scheduler and deferred impressions configuration **/
+
+.confirmation-user .additional_project_config{
+    margin: 5px 0 8px;
+}
+.confirmation-user .additional_project_config input[type="radio"]{
+    float: left;
+    margin: 8px 0 0 10px;
+}
+.confirmation-user .additional_project_config .tt_interface_label{
+    display: inline-block;
+    float: left;
+    width: 75%;
+    margin: 3px 3px 0;
+    padding: 0;
+    font-weight: normal;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    cursor: pointer;
+}
+.confirmation-user .additional_project_config .disabled.tt_interface_label{
+    cursor: default;
+}
+#tt_mainurl_container, 
+#tt_interface_container{
+    display: none;
+}
+input#tt_url,
+input#tt_mainurl{
+    width: 650px;
+}
+
+#start_end_options{
+    margin: 10px 0 0 10px;
+}
+#start_end_options label.start_end_label{
+    float: left;
+    width: 110px;
+    padding: 0;
+    line-height: 40px;
+    font-weight: bold;
+}
+.confirmation-user .additional_project_config input.start_end_text,
+.confirmation-user input.allocation_percent_value{
+    float: left;
+    width: 100px;
+    height: 35px;
+    margin: 3px 0 0;
+    padding: 0 5px;
+    background: #FFFFFF;
+    border: 1px solid #bfbfbf;
+    border-radius: 5px;
+}
+.confirmation-user .additional_project_config .start_end_select,
+.confirmation-user .additional_project_config .dom_action_select,
+#url_control_patterns .urlpattern_behavior,
+.allocation.blacktri #allocation,
+.ip_filter_element .ip_filter_action,
+.ip_filter_element .ip_filter_scope{
+    float: left;
+    width: 250px;
+    height: 35px;
+    margin: 5px 0 0 20px;
+    border: 1px solid #bfbfbf;
+    border-radius: 5px;
+}
+.confirmation-user .additional_project_config .start_end_select{
+    width: 100px;
+}
+.allocation.blacktri #allocation{
+    width: 75px;
+    margin-left: 0;
+}
+#url_control_patterns .lp-button{
+    margin-top: 9px;
+}
+.confirmation-user .additional_project_config .calendar_icon{
+    float: left;
+    width: 22px;
+    height: 22px;
+    margin: 7px 0 0 5px;
+    padding: 4px;
+    background: #333333;
+    border-radius: 5px;
+    font: bold 21px arial, helvetica, sans-serif;
+    color: #FFFFFF;
+    text-align: center;
+    cursor: pointer;
+}
+#frmVisualABStep4 .additional_project_config .calendar_icon{
+    line-height: 20px;
+}
+
+.test_step_container{
+    display: none;
+}
+
+.confirmation-user .additional_project_config .calendar_icon:hover{
+    background: #000000;
+}
+.confirmation-user .additional_project_config .disabled.calendar_icon,
+.confirmation-user .additional_project_config .disabled.calendar_icon:hover{
+    background: #CCCCCC;
+    cursor: default;
+}
+
+.additional_project_config .lpc_timeframe{
+    display: none;
+    position: absolute;
+    z-index: 991130;
+    width: 232px;
+    height: 170px;
+    margin: 7px 0 0 258px;
+    padding: 2px 3px;
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+}
+
+.additional_project_config .lpc_timeframe h2{
+    font: normal 12px arial, helvetica, sans-serif;
+    color: #888888;
+    margin: 0;
+}
+
+div.url_pattern_remove,
+div.targetpage_remove{
+    display: none;
+    float: left;
+    margin: 2px 0 0 10px;
+}
+div.targetpage_remove{
+    margin: 8px 0 0 10px;
+}
+.links #wizard_add_url.button-4-4{
+    margin-bottom: 10px;
+}
+
+/************/
+
+#percentage_sliders {
+    float: left;
+    width: 550px;
+    padding: 10px 0;
+    list-style: none;
+}
+.confirmation-user label.slider_vname{
+    margin: 10px 0 0;
+    padding: 0;
+}
+#percentage_sliders li {
+    height: auto;
+}
+#percentage_sliders div {
+    margin-bottom: 5px;
+}
+#percentage_sliders .ui-widget-header{
+    background: #C5C5C5;
+}
+#percentage_sliders .ui-widget-content{
+    margin-left: 5px;
+    background: #9ACA2C;
+}
+#percentage_sliders .ui-slider-handle{
+    top: -0.6em;
+    padding: 5px 1px;
+    background: #E5E5E5;
+    border: 1px solid #444444;
+    cursor: pointer;
+}
+#percentage_sliders .ui-slider-handle:hover{
+    background: #F5F5F5;
+    border-color: #000000;
+}
+#percentage_slider .allocation_percent{
+    float: right;
+}
+#allocation_percent_container{
+    float: left;
+    margin: 10px 0 0 30px;
+}
+.confirmation-user input.allocation_percent_value{
+    width: 35px;
+    height: 31px;
+    margin: 21px 0 0;
+    text-align: center;
+}
+.confirmation-user label.allocation_percent_label{
+    float: left;
+    width: 30px;
+    margin: 7px 0 0 5px;
+    line-height: 31px;
+}
+
+/************/
+
+.archived_cgoal_row,
+.first_cgoal_row,
+.first_cgoal_row *{
+    display: none;
+}
+.goals_label_container{
+    float: left;
+    width: 40%;
+    height: auto;
+}
+.confirmation-user label.goal_details_desc,
+.confirmation-user label.bt_additional_label{
+    padding: 5px 0 0;
+}
+.confirmation-user label.goals_label{
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.confirmation-user label.goals_name_label{
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 12px;
+}
+.confirmation-user label.goals_level_label,
+.confirmation-user label.goals_deleteddate_label{
+    float: left;
+    width: 30%;
+    margin-left: 5%;
+}
+.confirmation-user label.goals_deleteddate_label{
+    font-weight: normal;
+}
+label.goals_level_label.primary{
+    display: none;
+}
+.goals_action_link,
+.links_separator{
+    float: left;
+}
+.links_separator{
+    margin: 0 10px;
+}
+.cgoal_row .action_trigger .action_title{
+    height: 20px;
+    background-position: right -2px;
+    line-height: 21px;
+    padding-bottom: 3px;
+}
+.cgoal_row .action_over .action_title {
+    background-position: right -2px;
+}
+.cgoal_row .action_menu{
+    top: 22px;
+}
+.goals_reactivate_link{
+    float: right;
+    margin-right: 10px;
+}
+.goal_params_container .links,
+.url_pattern_remove{
+    display: none;
+}
+.TARGETPAGE.goal_params_container .links{
+    display: block;
+}
+
+.bt_clickgoals_config{
+    display: none;
+}
+#bt_additional_config .bt_additional_label,
+.bt_clickgoals_config .bt_additional_label,
+.edit_clickgoal_content .bt_additional_label{
+    cursor: pointer;
+    font-weight: normal;
+}
+.edit_clickgoal_content .headline{
+    margin-top: 15px;
+}
+#bt_additional_config .bt_additional_settings,
+.bt_clickgoals_config .bt_additional_settings,
+.edit_clickgoal_content .bt_additional_settings{
+    display: none;
+}
+#url_control_patterns input[type='text'],
+#bt_additional_config input[type='text'],
+.bt_clickgoals_config input[type='text']{
+    float: left;
+    width:300px;
+}
+#ip_filter_action {
+    margin-left: 20px;
+}
+#ip_filter_list {
+    width:300px;
+}
+#ip_filter_list:disabled {
+    opacity:0.5;
+}
+#ip_filter_scope, #ip_filter_action{
+    width:250px;
+}

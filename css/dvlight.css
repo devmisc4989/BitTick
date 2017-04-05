@@ -1,0 +1,284 @@
+@CHARSET "UTF-8";
+
+* {
+	font-family: Arial, Helvetica, sans-serif !important;
+}
+
+body {
+	background-color: #fff;
+	font-size: 13px !important;
+	line-height: 21px !important;
+	color: #464646 !important;
+}
+
+p {
+	padding-bottom: 10px !important;
+}
+
+a {
+	color: #057cc2;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+h2 span {
+	color: #057cc2;
+}
+h3 {
+	color: #464646;
+}
+
+#header_wrap {
+	height: 96px;
+	margin: 20px auto 0 auto;
+	background: url(../images/bg_header.png) left bottom repeat-x;
+}
+
+#header {
+	width: 1000px;
+	height: 96px;
+	margin: 0 auto;
+}
+
+.logotype {
+	position: relative;
+	top: 24px;
+	left: 0;
+	width: 172px;
+	height: 36px;
+	display: block;
+	background: url(../images/logo_divolution.png) top left no-repeat;
+}
+
+.appname {
+	position: relative;
+	left: 5px;
+	margin-top: 32px;
+	display: inline-block;
+	font-size: 16px;
+	color: #ffffff;
+}
+
+#main_nav {
+	position: relative;
+	top: 57px;
+	right: 0;
+	margin: 0;
+}
+
+#main_nav ul {
+	list-style: none;
+	float: right;
+}
+
+#main_nav li {
+	float: left;
+	position: relative;
+	padding: 0 !important;
+}
+
+#main_nav a {
+	font-weight: bold !important;
+	font-size: 12px !important;
+	display: block;
+	padding: 6px 14px !important;
+	height: 18px !important;
+	line-height: 18px !important;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #c0c0c0;
+}
+
+#main_nav ul li a {
+	color: #c0c0c0;
+}
+
+#main_nav ul li a:hover, 
+#main_nav ul li a.active {
+	background: none;
+	color: #ffffff;
+}
+
+#admin_header {
+	background: none;
+}
+
+.admin-header-left .admin-nav ul li a, 
+.admin-header-right .admin-nav ul li a {
+	color: #057cc2;
+}
+
+.admin-header-left .admin-nav ul li a:hover, 
+.admin-header-right .admin-nav ul li a:hover {
+	color: #373737;
+}
+
+.table-list td a {
+	color: #057cc2;
+}
+
+#user_url {
+	color: #057cc2;
+}
+
+#footer_wrap {
+	min-height: 200px;
+	background: url(../images/bg_footer.png) #2e2e2e repeat-x;
+	clear: both;
+}
+
+#footer {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+#footer_nav {
+	padding: 23px 0;
+}
+
+#footer_nav ul li a {
+	font-size: 13px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+#footer_nav ul li span {
+	color: #fff;
+}
+
+#footer_right {
+	float: right;
+	width: 300px;
+	font-size: 12px;
+	line-height: 20px;
+	color: #b5b5b5;
+	text-align: left;
+}
+
+#footer_right label {
+	display: inline-block;
+	width: 70px;
+	font-weight: bold;
+	color: #b5b5b5;
+}
+
+#footer_right a, 
+#footer_right a:hover, 
+#footer_right a:focus, 
+#footer_right a:active {
+	font-size: 12px;
+	color: #fff;
+}
+
+#inner_bg {
+	background: none;
+}
+
+#login_top, 
+#login_btm {
+	height: 0;
+	background: none;
+}
+
+#login_mdle {
+	border: 1px #ddd solid;
+	border-radius: 0;
+}
+
+.but, 
+.button, 
+.but-big {
+	padding: 8px 13px;
+	font-weight: bold;
+	font-size: 13px !important;
+	height: 34px;
+	text-transform: uppercase;
+	color: #fff;
+	cursor: pointer;
+	border: 1px #464646 solid;
+	background: url(../images/button-blue-bg.png) repeat-x;
+	border-radius: 0;
+}
+
+.button-grey {
+	padding: 8px 13px;
+	font-weight: bold;
+	font-size: 13px !important;
+	height: 34px;
+	text-transform: uppercase;
+	color: #fff;
+	cursor: pointer;
+	border: 1px #464646 solid;
+	background: url(../images/button-gray-bg.png) repeat-x;
+	border-radius: 0;
+}
+
+.but:hover, 
+.button:hover, 
+.button-grey:hover, 
+.but-big:hover {
+	border: 1px #aaa solid;
+	background-position: 0 0;
+}
+
+.login-textbox,
+input.textbox {
+	font-size: 14px !important;
+	height: 28px;
+	border-radius: 0;
+	border: 1px solid #AAA;
+	color: #414041;
+	padding: 1px 5px;
+	margin: 0;
+	background-color: #ffffff;
+	background-image: none;
+}
+
+.cant-access a, 
+.signup-now a {
+	color: #057cc2;
+}
+
+.signup-left-top, 
+.signup-left-btm {
+	height: 0;
+	background: none;
+}
+
+.signup-left-mdle {
+	border: 1px #0b64a3 solid;
+	border-radius: 0;
+}
+
+.signup-no {
+	background: url(../images/signup_no_dv.jpg) no-repeat;
+}
+
+.signup-info a {
+	color: #057cc2;
+}
+
+.table-title td.first, 
+.table-title td.last
+{
+  border-radius: 0;
+}
+
+/* EDITOR */
+.zone_tabs div.selected a {
+	color: #057cc2;
+}
+
+.tabs_main .left{
+	background:url(../images/dv_lft_27.png) 0 0 no-repeat;
+}
+.tabs_main .left:hover{
+	background:url(../images/dv_lft_27.png) 0 -27px no-repeat;	
+}
+.tabs_main .right{
+	background:url(../images/dv_rgt_27.png) 0 0 no-repeat;
+}
+.tabs_main .right:hover{
+	background:url(../images/dv_rgt_27.png) 0 -27px no-repeat;	
+}

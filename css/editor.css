@@ -1,0 +1,477 @@
+.mv_edit_div
+{
+    position:absolute;
+    background:url(../images/pen-16.png) 8px 12px no-repeat;
+    width:32px;
+    height:48px;
+    display:inline-block;
+    z-index:990901;
+    display:none;
+}
+.mv_edit_div .my_levels
+{
+    position:absolute;
+    width:150px;
+    background-color:#e9f8c0 !important;
+    border:1px #cad8a3 solid !important;
+    padding:10px;
+    /*
+            margin-top: 24px;
+            margin-left: -130px;
+    */
+    margin-top: 0px;
+    margin-left: 28px;
+    font-size:12px !important;
+    text-align:left;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    border-radius: 4px;
+}
+.mv_edit_div .my_levels hr
+{
+    background-color:#dae9b1;
+    height:1px;
+    padding:0;
+    border:none;
+    margin:4px 0;
+}
+.mv_edit_div .my_levels a.title
+{
+    display:block !important;
+    font-size:12px !important;
+    color:#343a24 !important;
+    text-decoration: underline !important;
+    font-weight:bold !important;
+}
+.mv_edit_div .my_levels a.title:hover
+{
+    display:block !important;
+    font-size:12px !important;
+    color:#343a24 !important;
+    text-decoration: none !important;	
+    font-weight:bold !important;
+    text-decoration: none !important;	
+}
+
+.mv_edit_div .my_levels a
+{
+    display:block !important;
+    font-size:12px !important;
+    color:#596d09 !important;
+    text-decoration: underline !important;
+}
+.mv_edit_div .my_levels a:hover
+{
+    display:block !important;
+    font-size:12px !important;
+    color:#596d09 !important;
+    text-decoration: none !important;	
+}
+
+.my_hide 
+{
+    display:none;
+}
+.mouseover
+{
+    /* #acc016 */	
+    /*background-color:#92c2e1 !important;*/
+    /*border:none!important;*/
+    /*color:#FFF !important; */
+    cursor:pointer !important;
+    /*outline:2px dashed #009;*/
+}
+.ontop
+{
+    z-index: 990900 !important;
+}
+.bg_editor
+{
+    /*
+    background-color:#acc016 !important;
+    color:#000 !important;
+    */
+    outline:none !important;
+    cursor:pointer;
+}
+
+#my_mouseover_div{
+    position:absolute;
+    z-index:-1 !important;
+    width:100px;
+    height:30px;
+    border:1px solid #aed24c;
+    display:none !important;
+    background:url(../images/divover.png) center center repeat;
+    background-color:#aed24c;
+}
+
+#fancybox-content > div {
+    overflow:hidden !important;
+}
+#fancybox-content iframe{
+    float:none;
+    border:none;
+    margin-left: 0;
+    padding: 0;
+}
+
+.google_ad_ph{
+    display:inline-table;
+    border:none;
+    margin:0;
+    padding:0;
+    position:relative;
+    visibility:visible;
+    border:1px dashed #333;
+    /*background:url(../images/google_add_ph.png) center center no-repeat;*/
+    text-align:center;
+    color:#5a7813;
+    font-family: 'Trebuchet MS',Arial,Helvetica,sans-serif;
+    font-size:12px;
+    font-weight:normal;
+}
+.BTMouseOverTop{
+    border-top:1px solid #009;
+    position:absolute;
+    display:none;
+    z-index:990902;
+    background-color:#FFF;
+
+    -moz-box-shadow: 2px 2px 3px #009;
+    -webkit-box-shadow: 2px 2px 3px #009;
+    box-shadow: 2px 2px 3px #009;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color='#000099')";
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color='#000099');
+}
+.BTMouseOverBottom {
+    border-bottom:1px solid #009;
+    position:absolute;
+    display:none;
+    z-index:990902;
+    background-color:#FFF;
+
+    -moz-box-shadow: 2px 2px 3px #009;
+    -webkit-box-shadow: 2px 2px 3px #009;
+    box-shadow: 2px 2px 3px #009;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color='#000099')";
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color='#000099');
+}
+.BTMouseOverLeft {
+    border-left:1px solid #009;
+    position:absolute;
+    display:none;
+    z-index:990902;
+    background-color:#FFF;
+
+    -moz-box-shadow: 2px 2px 3px #009;
+    -webkit-box-shadow: 2px 2px 3px #009;
+    box-shadow: 2px 2px 3px #009;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color='#000099')";
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color='#000099');
+}
+.BTMouseOverRight {
+    border-right:1px solid #009;
+    position:absolute;
+    display:none;
+    z-index:990902;
+    background-color:#FFF;
+
+    -moz-box-shadow: 2px 2px 3px #009;
+    -webkit-box-shadow: 2px 2px 3px #009;
+    box-shadow: 2px 2px 3px #009;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color='#000099')";
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color='#000099');
+}
+
+
+
+.BTEditedElementTop{
+    border-top:1px dotted #000;
+    position:absolute;
+    display:none;
+    z-index:990901;
+    background-color:#FFF;
+    -moz-box-shadow: 1px 1px 2px #009;
+    -webkit-box-shadow: 1px 1px 2px #009;
+    box-shadow: 1px 1px 2px #009;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#000099')";
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#000099');
+}
+.BTEditedElementBottom {
+    border-bottom:1px dotted #000;
+    position:absolute;
+    display:none;
+    z-index:990901;
+    background-color:#FFF;
+
+    -moz-box-shadow: 1px 1px 2px #009;
+    -webkit-box-shadow: 1px 1px 2px #009;
+    box-shadow: 1px 1px 2px #009;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#000099')";
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#000099');
+}
+.BTEditedElementLeft {
+    border-left:1px dotted #000;
+    position:absolute;
+    display:none;
+    z-index:990901;
+    background-color:#FFF;
+
+    -moz-box-shadow: 1px 1px 2px #009;
+    -webkit-box-shadow: 1px 1px 2px #009;
+    box-shadow: 1px 1px 2px #009;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#000099')";
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#000099');
+}
+.BTEditedElementRight {
+    border-right:1px dotted #000;
+    position:absolute;
+    display:none;
+    z-index:990901;
+    background-color:#FFF;
+
+    -moz-box-shadow: 1px 1px 2px #009;
+    -webkit-box-shadow: 1px 1px 1px #009;
+    box-shadow: 1px 1px 2px #009;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#000099')";
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#000099');
+}
+
+textarea.textbox{
+    border-radius: 5px;
+    padding-right:0 0 0 5px;
+    background:url(../images/input_shaddow.gif) top left repeat-x #FFF;
+    color:#333333;
+}
+#BTFactorEditPopup .BtEditorButton, #BTFactorEditPopup .button, #BTMoveElementControls .BtEditorButton, #st_editor .BtEditorButton{
+    background: url("../images/button_bg.jpg") repeat-x scroll 0 0 transparent;
+    border: 1px solid #427408;
+    border-radius: 6px 6px 6px 6px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    height: 30px;
+    padding: 0 10px;
+    text-align: center;
+    display:inline;
+    width: auto;
+}
+#BTMoveElementControls .BTSaveButton{
+    background: url("../images/available.png") no-repeat 0 0 transparent;
+    width:16px;
+    height:16px;
+    margin-right:10px;
+    float:left;
+    cursor:pointer;
+}
+#BTMoveElementControls .BTCancelButton{
+    background: url("../images/not_available.png") no-repeat 0 0 transparent;	
+    width:16px;
+    height:16px;
+    float:left;
+    cursor:pointer;
+}
+
+#BTMoveElementControls .BtEditorButton:hover, #BTFactorEditPopup .BtEditorButton:hover{
+    background-position:0 -38px;
+    border:solid 1px #4f870e;
+}
+
+.ctrl-buttons {
+    padding-top:5px;
+    line-height:1.4em;
+}
+
+#BTMouseOverEditorMenu {
+    width:170px;
+    height:auto;
+    position:absolute;
+    background-color: #EEEEEE !important;
+    border: 1px solid #A2A2A2 !important;
+    border-radius: 10px !important;
+    top:40px;
+    left:50px;
+    padding:6px;
+    display:none;
+    z-index:990903;
+    font-family:"Trebuchet MS",Arial,Helvetica,sans-serif !important;
+}
+
+#BTMoveElementControls {
+    position:absolute;
+    width:100px;
+    height:16px;
+    color:#FFF !important;
+    top:-20px;
+    left:0;	
+}
+#BTMoveElementControls select{
+    font-size:10px;
+    margin-left:4px;
+}
+#BTMouseOverEditorMenu a {
+    display:block !important;
+    color:#333333 !important;
+    background-color:#EEEEEE !important;
+    margin-right:0;
+    margin-left:0;
+    line-height:1.4em !important;
+    padding:2px 6px !important;
+    font-weight:normal !important;
+    text-decoration:none !important;
+    font-size:12px !important;
+    font-family: Arial !important;
+
+    text-align:left;
+    text-transform:none !important;
+}
+#BTMouseOverEditorMenu a.tag_specific, .blacktri #BTMouseOverEditorMenu a.tag_specific{
+    display: none !important;
+}
+#BTMouseOverEditorMenu a.tag_specific.show, .blacktri #BTMouseOverEditorMenu a.tag_specific.show{
+    display: block !important;
+}
+
+#BTMouseOverEditorMenu.disable_sms_editing a.no_sms, .blacktri #BTMouseOverEditorMenu.disable_sms_editing a.no_sms, #BTMouseOverEditorMenu.disable_sms_editing a#parent_selector.no_sms{
+    display: none !important;
+}
+
+
+#BTMouseOverEditorMenu a:hover {
+    background-color:#E2E2E2 !important;
+    text-decoration:none !important;
+    font-size:12px !important;
+    font-weight:normal !important;
+}
+
+#BTMoveFrame {
+    height:10px; 
+    width:10px;
+    position:absolute;
+
+    border: 2px dotted #F68900;
+    display:none;
+    cursor:move;
+}
+
+#BTFactorEditPopup {
+    height:350px; 
+    width:650px;
+    overflow:visible;
+    position:absolute;
+    background-color:#FFF;
+
+    border: 4px solid #F68900;
+    border-radius: 5px 5px 5px 5px;
+    padding:10px;
+    display:none;
+}
+#BTFactorEditPopup > label {
+    color: #333333 !important;
+    font-family: 'Trebuchet MS',Arial,Helvetica,sans-serif !important;
+    font-size: 15px !important;
+    font-weight: bold !important;
+    padding: 0px 0 0 !important;
+    float:none !important;
+    display:inline;
+    margin:0;
+}
+.ui-draggable #BTFactorEditPopup > label {
+    cursor:move;
+}
+#BTFactorEditPopup .BTEditorModes{
+    float:right;
+}
+#BTFactorEditPopup .BTEditorModes a, #BTFactorEditPopup .BTEditorModes a:hover{
+    color: #AAA !important;
+    font-family: 'Trebuchet MS',Arial,Helvetica,sans-serif !important;
+    font-size: 14px !important;
+    font-weight: bold !important;
+    text-decoration:none;
+    cursor:pointer;
+    text-transform:uppercase !important;
+}
+#BTFactorEditPopup .BTEditorModes a.selected{
+    color: #8DAF0F !important;
+    text-transform:uppercase !important;
+}
+
+#BTHtmlEditor {
+    width:600px;
+    height:220px;
+    position:absolute;
+    float:none;
+    visibility:hidden !important;
+}
+.BTNicEditor {
+    height:197px !important;
+}
+
+.bt_moving_element
+{
+    position:absolute !important;
+    z-index:991504 !important;
+    cursor:move;
+    /*background-color:#92C2E1;*/
+}
+.noscroll{
+    overflow:hidden;
+}
+/*.ui-draggable { cursor: move; }*/
+.ui-resizable-e {
+    right:5px;
+    z-index:991105 !important;
+}
+.ui-resizable-s {
+    bottom:5px;
+    z-index:991105 !important;
+}
+/*.ui-resizable-se {
+    bottom:20px;
+    right:20px;
+    z-index:991105 !important;
+}*/
+
+/* Image preloader.gif while waiting for the ajax response in the DIAGNOSE MODE popup */
+.loading-img{
+    width: 160px;
+    margin: 20px 210px 0;
+}
+
+.etracker.loading-img{
+    width: 220px;
+}
+
+/* Table that contains the checked tests for the DIAGNOSE MODE popup*/
+
+table.wizard-table {
+    font-family: verdana,arial,sans-serif;
+    font-size: 12px;
+    color:#333333;
+    border-width: 1px;
+    border-color: #666666;
+    border-collapse: collapse;
+}
+table.wizard-table th {
+    border-width: 1px;
+    padding: 6px 5px;
+    border-style: solid;
+    border-color: #666666;
+    background-color: #dedede;
+    font-weight: bold;
+}
+table.wizard-table td {
+    border-width: 1px;
+    padding: 6px 5px;
+    border-style: solid;
+    border-color: #666666;
+    background-color: #FFFFFF;
+}
+
+.table td[data-sort]{
+    cursor:pointer;
+}

@@ -1,0 +1,739 @@
+html,body{height: 100%}
+body{ background: #FFFFFF}
+
+/* temorary over rides */
+/*#editor_page #vab2_4, #editor_page #vab2_3{
+    display: none;
+}*/
+
+/* end temp over rides*/
+
+#editor_wrap{
+    height: 100%;
+    position: relative;
+}
+
+#frame_editor {
+
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: rgb(255, 255, 255);
+}
+.editor_border{
+    position: absolute;
+    display: none;
+}
+.etracker .editor_border{
+    background: #F68900;
+    display: block;
+}
+
+.etracker .help_box{
+    right: 15px;
+    top: 5px;
+}
+.top_border,.bottom_border{
+    height: 4px;
+    left: 0;
+    right: 0;
+}
+.bottom_border{
+    bottom: 0;
+}
+
+.left_border, .right_border{
+    width: 4px;
+    top: 0;
+    bottom: 0;
+}
+.right_border{
+    right: 0;
+}
+#editor_top{
+    position: relative;
+    padding: 12px 15px 0;
+    height: 125px;
+}
+/* experimental for "move element" */
+#editor_top.fixed{
+    position: fixed;
+    right: 4px;
+    left: 4px;
+    top:0;
+    background: #ffffff;
+    z-index: 5000;
+    padding:8px 11px;
+    height: 94px;
+    border-top: 4px solid #ffffff;
+}
+#editor_top.fixed .tabs_main{
+    top: 82px;
+    margin-left: -4px;
+}
+
+
+.editor_proxy.move_mode{
+    overflow: visible;
+}
+
+.etracker #editor_top{
+    border-bottom: 3px solid #FB8900;
+}
+.etracker #editor_top.fixed{
+    border-top-color: #FB8900;
+}
+
+
+#editor_top h1 {
+    color: #111111;
+    font-family: 'Ubuntu',sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#editor_iframe_wrap{
+    position: absolute;
+    left: 15px;
+    top: 140px;
+    right: 15px;
+    bottom: 14px;
+}
+.editor_iframe_device{
+    outline: 2px #fb8900 dotted;
+}
+.editor_proxy,.editor_proxy_scroll, .editor_action{
+    position: absolute !important;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: auto;
+    width: auto;
+}
+
+/* over rides */
+.tabs_main{
+    display: block;
+    top: 105px;
+    border: none!important;
+}
+#menu_tabs{
+    top: 109px;
+}
+#editor_page .tabs_main {
+    left:15px;
+    right: 15px;
+}
+#editor_page.etracker .tabs_main {
+    left:5px;
+}
+
+.editor_popup_loading, .editor_popup{
+    left: 50%;
+    margin-left: -200px;
+    margin-top: 0;
+    top: 40%;
+}
+.editor_popup{
+    top: 20%;
+}
+/* style editor popup*/
+#st_editor{
+    width: 620px;
+    position: absolute;
+    border-width: 3px;
+    border-color: #F68900;
+    margin-left: -310px;
+    z-index: 2200;
+}
+
+.blacktri #st_editor{
+    border-color: #d2d2d2;
+}
+.blacktri #st_editor h1{
+    background: #d2d2d2;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left:20px ;
+    font-size: 14px;
+    font-family: 'Ubuntu',sans-serif;
+    height: 25px;
+    line-height: 20px;
+    margin-bottom: 15px;
+}
+
+#st_editor .field {
+    margin-top: 8px;
+    padding: 6px 6px 3px;
+    width: 95%;
+}
+
+.etracker #st_editor_tabs{
+    margin: 10px;
+}
+#st_editor h1 {
+    font-size: 15px;
+}
+.etracker #st_editor h1{
+    background: #FF8700;
+    color: white;
+    padding-left: 10px;
+    border: none;
+    font-size: 14px;
+    line-height: 25px;
+    padding-bottom: 2px;
+}
+input#st_editor_save{
+    width: auto!important;
+    margin-right: 30px;
+}
+
+.tab-content{
+    display: none;
+}
+.tab-content.selected{
+    display: block;
+}
+
+.tab-content:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.tab-content .column{
+    width: 50%;
+}
+
+.tab-content .column.right{
+    float: right;
+}
+#st_editor .tabs_container{
+    margin: 0;
+}
+#st_editor .tabs_main{
+    position: inherit;
+    top: auto;
+    left: auto;
+}
+#st_editor .zone_tabs .tab a{
+    margin-right: 6px;
+}
+
+#st_editor .property_controls{
+    position: absolute;
+    right: 0;
+    bottom: -6px;
+}
+#st_editor .field.modified{
+    background: #fbf4c6;
+}
+
+#st_editor .property_controls button{
+    background: green;
+    color: white;
+    border: 1px solid #08b17b;
+    border-radius: 5px;
+    display: none;
+}
+#st_editor .field.modified .st_field_undo{
+    display: inline;
+}
+
+#st_editor .field.active_edit .st_field_apply{
+    display: inline;
+}
+
+
+#BTFactorEditPopup{
+    height: 440px;
+    position: absolute;
+    /*left:50%;
+    margin-left: -220px;*/
+    top:80px;
+    z-index: 2200;
+    display: none;
+}
+
+#BTFactorEditPopup > label.codeEdit-title{ display: none}
+
+.editor_popup label, #st_editor .field label{
+    width: 100px;
+    padding: 0;
+    line-height: 30px;
+}
+#st_editor .column.narrow_labels .field label{
+    width:60px;
+}
+#st_editor .block_labels .field label{
+    line-height: normal;
+    /*display: block;*/
+}
+
+#st_editor .field label{
+    font-size: 12px;
+}
+#st_editor label.radio{
+    line-height: 12px;
+    width: auto!important;
+    padding: 0;
+    margin-right: 1em;
+    float: none;
+}
+#st_editor input[type=radio]{
+    width: auto;
+    padding: 0;
+    margin-right: 5px;
+}
+
+.etracker .ctrl-buttons .links {
+    line-height: 18px!important;
+}
+
+#editor_loading_message{
+    display: block;
+
+}
+#editor_loading_message .close_popup{
+    display: none;
+}
+
+.editor_popup input, .editor_popup select/*, #st_editor input*/{
+    border: 1px solid #eaeaea;
+    border-radius: 4px;
+    padding: 3px 10px;
+    width: 190px;
+    font-size: 1.1em;
+    /*line-height: 1.4em;*/
+    height: auto;
+}
+#st_editor input[type=text]{
+    border: 1px solid #eaeaea;
+    border-radius: 4px;
+    width: 150px;
+}
+#st_editor .sub_properties input[type=text]{
+    width: 70px;
+}
+.sub_properties{
+    padding-left: 30px;
+    display: none;
+}
+.sub_properties span{
+    font-weight: bold;
+}
+#st_editor select{
+    width:170px;
+}
+.editor_popup option{
+    padding-left: 8px;
+}
+
+.editor_popup .field{
+    padding: 10px 0 ;
+    position: relative;
+}
+.etracker .editor_popup_loading{
+    margin-left: -305px;
+}
+
+div.editor_top_buttons {
+    position: relative;
+    float: right;
+    width: auto;
+    margin-top: 0;
+    padding: 0 0 0 20px;
+}
+.BTMouseOverEditorMenu_header {
+    background: #8DAF0F;
+    color: #FFFFFF;
+    font-size: 1.1em;
+    font-weight: bold;
+    line-height: 1.6em;
+    margin-bottom: 6px;
+    padding: 0 4px;
+}
+
+.blacktri .BTMouseOverEditorMenu_header{
+    border-radius: 2px 2px 0 0;
+}
+
+.etracker .BTMouseOverEditorMenu_header {
+    background:#FB8900;
+    color: #FFFFFF;
+    font-size: 14px;
+    margin: 0 -8px;
+    padding: 0 4px 2px;
+}
+
+.menu .menu_separator{
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid #AAAAAA;
+}
+
+.menu .menu_perso_title{
+    padding: 5px 0 0;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 16px;
+    cursor: default;
+}
+
+.menu .perso_wizard_link{
+    width: 145px;
+    -o-text-overflow: ellipsis;
+    text-overflow:    ellipsis;
+    overflow:hidden;
+    white-space:nowrap;
+}
+
+/* disable viewing of JS and CSS editing unless tab is active */
+.menu .selected_tab_only{
+    display: none;
+}
+
+.tab.selected .menu .selected_tab_only{
+    display: block;
+}
+
+.zone_tabs .menu_container .menu a.disabled, .zone_tabs .menu_container .menu a.disabled:hover{
+    color: #666666;
+    cursor: default;
+
+}
+
+a#parent_selector.disabled, a#parent_selector.disabled:hover{
+    color: #666666!important;
+    cursor: default!important;
+}
+#BTHtmlEditor {
+    width:100%;
+    height: 100%;
+}
+#code_blocks{
+    border: 2px solid #CCC ;
+
+}
+.blacktri #code_blocks{
+    margin-bottom: 15px;
+    margin-right: 20px;
+}
+
+/* SMS tabs nav */
+.menu .drop-nav{
+    position: relative;
+}
+.menu a.blacktri.dropdown_link{
+    background-image: url("../../images/action_dropnav_arrow.png");
+    background-repeat: no-repeat;
+    background-position: 100% 6px;
+}
+.menu .drop-nav:hover .dropdown{
+    display: block;
+}
+.menu .dropdown{
+    position: absolute;
+    top:6px;
+    left: 90%;
+    background: white;
+    list-style-type: none;
+    border: 2px solid #cccccc;
+    width: 100px;
+    display: none;
+}
+
+.menu .dropnav_etracker{
+    display: inline-block;
+    float: right;
+    margin-right: 0;
+}
+
+.etracker .menu .dropdown{
+    border-color: #f68900;
+}
+.dropdown li{
+    padding-left: 10px;
+}
+.sms_edit, .sms_toggle, .sms_delete {
+    display: none;
+}
+
+.has_sms .sms_edit,.has_sms .sms_toggle,.has_sms .sms_delete {
+    display: block;
+}
+
+.has_sms .sms_add{
+    display: none;
+}
+#edit_url_popup{
+    width: 500px;
+    margin-left: -250px;
+}
+
+#edit_url_popup h1{
+    cursor: move;
+}
+
+#edit_url_input{
+    width: 100%;
+}
+
+#edit_url_popup{
+    width: 500px;
+    margin-left: -250px;
+}
+
+#edit_url_popup h1{
+    cursor: move;
+}
+
+#edit_url_input{
+    width: 100%;
+}
+#full_editor_overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3000;
+    background: white;
+    opacity: .7;
+    display: none;
+
+}
+#sms_ui{
+    /*width: 784px;*/
+    position: absolute;
+  /*  top: 40px;
+    left: 50%;
+    margin-left: -392px;
+    height: 80%;*/
+    z-index: 5000;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#sms_ui_frame{
+   /* width: 784px;
+    height: 750px;*/
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#rearrange_frame,#rearrange_frame li { list-style-type: none;}
+.ui-draggable-helper {
+    border: 1px dotted #000;
+    padding: 6px;
+    background: #fff;
+    font-size: 1.2em;
+    opacity: .5;
+}
+.ui-sortable-placeholder{
+    display: none;
+    margin: -1px;
+}
+
+.client_mask{
+    position: absolute;
+    background: #000000;
+    opacity: .3;
+    display: none;
+    z-index: 2000;
+}
+.client_mask_left{
+    left: 0;
+    top: 0;
+    /*bottom: 0;*/
+}
+
+.client_mask_top{
+    top: 0;
+    left: 0;
+    /*right: 0;*/
+}
+.client_mask_right{
+     top: 0;
+     right: 0;
+    /* bottom: 0;*/
+}
+.client_mask_bottom{
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+#rearrange_control{
+    background: #ffffff;
+    z-index: 2050;
+    position: absolute;
+    bottom: 5px;
+    left:50%;
+    border: 2px solid #CCCCCC;
+    border-radius: 5px;
+    margin-left: -225px;
+    display: none;
+    width: 450px;
+    padding: 10px;
+}
+
+.etracker #rearrange_control{
+    border: 3px solid #fb8900;
+}
+
+.blacktri #rearrange_control{ top: 0}
+.blacktri #rearrange_control .ok,.blacktri #rearrange_control .ctrl-buttons .links{ margin-top:10px}
+
+.blacktri #rearrange_control #save_rearrange {
+	margin-top: 6px;	
+	margin-bottom:6px;
+}
+
+#save_rearrange:disabled{
+    opacity: .5;
+}
+.client_border {
+    display: none;
+    position: absolute;
+    z-index: 2010;
+}
+
+.element_border{
+    background: #ff1493;
+}
+.element_border.horizontal{
+    height: 3px;
+}
+.element_border.vertical{
+    width: 3px;
+}
+
+.rearrange_border{
+    background: #0043ff;
+}
+.rearrange_border.horizontal{
+    height: 3px;
+}
+.rearrange_border.vertical{
+    width: 3px;
+}
+.preloading_message {
+    background-color: #8cb82b;
+    bottom: 1px;
+    color: white;
+    display: none;
+    font-size: 16px;
+    height: 40px;
+    left: 1px;
+    line-height: 40px;
+    position: absolute;
+    right: 1px;
+    text-align: center;
+    z-index: 1502;
+}
+.editor_popup_message3 {
+	padding-bottom:5px;
+}
+.top-panel-selector {
+    float: left;
+    margin: 0 35px 0 10px;
+}
+.top-panel-selector .top-panel-dropdown{
+    width: 225px;
+    height: 30px;
+    margin: 1px 0 0;
+    padding: 0 0 2px;
+    border: 1px solid #bfbfbf;
+    border-radius: 5px;
+}
+.mpt-panel-selector .top-panel-dropdown{
+    width: 165px;
+}
+.top-panel-selector label{
+    display:block;
+    font-size:12px;
+    margin: 2px 0 0;
+}
+.device-selector .top-panel-dropdown option {
+    margin-left:10px;
+}
+.top-panel .mpt-edit{
+    font-weight: bold;
+    text-decoration: underline;
+}
+.top-panel .mpt-edit:hover{
+    text-decoration: none;
+}
+
+#keep_changes_wrapper{
+    width: 420px;
+    height: 160px;
+    padding: 10px 10px 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+#keep_changes_wrapper .perso_rule_btn_container{
+    margin-bottom: 8px;
+}
+
+.mpt_popup{
+    display: none;
+}
+#mpt_pages_form input.textbox{
+    width: 620px;
+}
+#mpt_pages_form .mpt_delete_icon{
+    display: none;
+}
+#mpt_pages_form span.mpt_icon{
+    float: right;
+    width: 22px;
+    height: 22px;
+    margin: 12px 40px 0 0;
+    background: url("../../images/lp_delete.png") no-repeat scroll 0 0;
+    cursor: pointer;
+}
+#mpt_pages_form .mpt_delete_icon:hover span.mpt_icon{
+    background: url("../../images/lp_delete.png") no-repeat scroll 0 -22px;
+}
+#mpt_visual_name_url input.textbox{
+    width: 690px;
+}
+.mpt_wizard_pattern{
+    min-height: 0;
+    height: auto;
+}
+.mpt_wizard_pattern .label_input{
+    display: inline-block;
+    float: left;
+    width: 20%;
+    background: #FFFFFF;
+    border: 0;
+    color: #333;
+    font-family: "Ubuntu",sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 44px;
+    white-space: nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+}
+.mpt_wizard_pattern .textbox{
+    float: left;
+    width: 61%;
+    margin-left: 5%;
+}

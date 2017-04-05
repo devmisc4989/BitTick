@@ -1,0 +1,231 @@
+body, html{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.clear{
+    clear: both;
+}
+.separator{
+    clear: both;
+    width: 100%;
+    height: 10px;
+    border-bottom: 1px dotted #666666;
+}
+
+header{
+    width: 100%;
+    height: 45px;
+    margin: 0;
+    background: #013C66;
+    background: -moz-linear-gradient(#457FB9, #74ADE9);
+    background: -webkit-linear-gradient(#457FB9, #74ADE9);
+    background: -o-linear-gradient(#457FB9, #74ADE9);
+}
+
+header h1{
+    float: left;
+    margin: 0 50px 0 10px;
+    font: bold 1.5em sans-serif;
+    color: #FFFFFF;
+    line-height: 45px;
+}
+
+header a{
+    padding: 10px 15px;
+    float: left;
+    font: bold 0.9em sans-serif;
+    color: #EEEEEE;
+    line-height: 25px;
+    text-decoration: none;
+}
+
+header a:hover{
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+header span{
+    float: left;
+    font: bold 1em sans-serif;
+    color: #EEEEEE;
+    line-height: 45px;
+}
+
+#wrapper{
+    width: 98%;
+    height: auto;
+    margin: auto;
+    padding: 5px 0.5%;
+}
+
+#wrapper h2{
+    float: left;
+    margin: 0 0 15px;
+    font: bold 1.5em sans-serif;
+}
+
+#wrapper form{
+    margin: 0;
+}
+
+#wrapper input[type='text']{
+    float: left;
+    width: 150px;
+    height: 24px;
+    border: 1px solid #666666;
+}
+
+#wrapper input[type='submit']{
+    float: left;
+    width: 80px;
+    height: 25px;
+    margin:  0 5px;
+}
+
+#create-newtest{
+    float: right;
+    margin: 2px 0;
+    padding: 2px 15px;
+    font: bold 1em sans-serif;
+    cursor: pointer;
+}
+
+#test-list{
+    margin-top: 15px;
+}
+
+footer{
+    width: 100%;
+    height: 15px;
+    margin: 15px 0 0;
+    background: #444444;
+}
+
+
+/**************** Jquery UI Dialogs **************/
+.ui-dialog{
+    min-width: 96%;
+    min-height: 94%;
+}
+
+.alert.ui-dialog{
+    min-width: 350px;
+    min-height: 200px;
+}
+
+.edit-dialogs{
+    display: none;
+}
+
+.validateTips{
+    margin: 0;
+    font: italic 0.8em sans-serif;
+    color: #FF0000;
+}
+
+.edit-dialogs label, 
+.edit-dialogs input,
+.edit-dialogs textarea{ 
+    display:block;
+    float: left;
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 0.8em;
+}
+
+input[type="text"]:disabled,
+textarea:disabled{
+    background: #EEEEEE;
+}
+
+.edit-dialogs label{
+    min-width: 150px;
+    margin: 3px 0 0;
+    line-height: 26px;
+    text-align: right;
+    font-weight: bold;
+}
+
+.edit-dialogs input.text,
+.edit-dialogs select,
+.edit-dialogs textarea{
+    margin-bottom:5px; 
+    width:400px; 
+    height: 24px;
+    margin: 4px 0 0 10px;
+    padding: 2px;
+    font-size: 0.8em;
+}
+
+.edit-dialogs select{
+    padding: 0 2px;
+}
+
+.edit-dialogs textarea{
+    width: 500px;
+    height: 75px;
+    font-size: 0.8em;
+}
+
+.edit-dialogs fieldset { 
+    padding:0; 
+    border:0; 
+    margin-top:5px; 
+}
+
+/***/
+
+.edit-dialogs .add-test-feature{
+    float: left;
+    margin: 20px 0 0;
+    font: bold 0.8em sans-serif;
+    color: #000088;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.edit-dialogs .add-test-feature:hover{
+    color: #0000CC;
+    text-decoration: underline;
+}
+
+.add-level.add-test-feature{
+    margin: 5px 0 0 158px;
+}
+
+/****/
+
+.edit-dialogs .delbtn{
+    float: right;
+    margin: 3px;
+    padding: 3px 5px 0;
+    background: #FFFFFF;
+    border: 1px solid #AA6666;
+    border-radius: 10px;
+    font: bold 0.9em sans-serif;
+    color: #660000;
+    cursor: pointer;
+}
+
+.delbtn.level-delete{
+    float: left;
+    margin: 26px 0 0 2px;
+}
+
+.edit-dialogs .delbtn:hover{
+    background: #FF0000;
+    color: #FFFFFF;
+}
+
+/****/
+
+.ui-dialog .ui-state-error { 
+    padding: 2px; 
+}
+
+.validateTips { 
+    border: 1px solid transparent; 
+    padding: 2px; 
+}

@@ -1,0 +1,229 @@
+/*!
+* CleanSlate
+*   github.com/premasagar/cleanslate
+*
+*//*
+    An extreme CSS reset stylesheet, for normalising the styling of a container element and its children.
+
+    by Premasagar Rose
+        dharmafly.com
+
+    license
+        opensource.org/licenses/mit-license.php
+
+    **
+        
+    v0.9.3
+        
+*/
+
+/* == BLANKET RESET RULES == */
+#_bt_sms_main_container, #_bt_sms_main_container h1, #_bt_sms_main_container h2, #_bt_sms_main_container h3, #_bt_sms_main_container h4, #_bt_sms_main_container h5, #_bt_sms_main_container h6, #_bt_sms_main_container p, #_bt_sms_main_container td, #_bt_sms_main_container dl, #_bt_sms_main_container tr, #_bt_sms_main_container dt, #_bt_sms_main_container ol, #_bt_sms_main_container form, #_bt_sms_main_container select, #_bt_sms_main_container option, #_bt_sms_main_container pre, #_bt_sms_main_container div, #_bt_sms_main_container table,  #_bt_sms_main_container th, #_bt_sms_main_container tbody, #_bt_sms_main_container tfoot, #_bt_sms_main_container caption, #_bt_sms_main_container thead, #_bt_sms_main_container ul, #_bt_sms_main_container li, #_bt_sms_main_container address, #_bt_sms_main_container blockquote, #_bt_sms_main_container dd, #_bt_sms_main_container fieldset, #_bt_sms_main_container li, #_bt_sms_main_container iframe, #_bt_sms_main_container strong, #_bt_sms_main_container legend, #_bt_sms_main_container em, #_bt_sms_main_container s, #_bt_sms_main_container cite, #_bt_sms_main_container span, #_bt_sms_main_container input, #_bt_sms_main_container sup, #_bt_sms_main_container label, #_bt_sms_main_container dfn, #_bt_sms_main_container object, #_bt_sms_main_container big, #_bt_sms_main_container q, #_bt_sms_main_container font, #_bt_sms_main_container samp, #_bt_sms_main_container acronym, #_bt_sms_main_container small, #_bt_sms_main_container img, #_bt_sms_main_container strike, #_bt_sms_main_container code, #_bt_sms_main_container sub, #_bt_sms_main_container ins, #_bt_sms_main_container textarea, #_bt_sms_main_container var, #_bt_sms_main_container a, #_bt_sms_main_container abbr, #_bt_sms_main_container applet, #_bt_sms_main_container del, #_bt_sms_main_container kbd, #_bt_sms_main_container tt, #_bt_sms_main_container b, #_bt_sms_main_container i, #_bt_sms_main_container hr,
+#_bt_sms_main_container article, #_bt_sms_main_container aside, #_bt_sms_main_container dialog, #_bt_sms_main_container figure, #_bt_sms_main_container footer, #_bt_sms_main_container header, #_bt_sms_main_container hgroup, #_bt_sms_main_container menu, #_bt_sms_main_container nav, #_bt_sms_main_container section, #_bt_sms_main_container time, #_bt_sms_main_container mark, #_bt_sms_main_container audio, #_bt_sms_main_container video {
+    background-attachment:scroll;
+    background-color:transparent;
+    background-image:none; /* This rule affects the use of pngfix JavaScript http://dillerdesign.com/experiment/DD_BelatedPNG for IE6, which is used to force the browser to recognise alpha-transparent PNGs files that replace the IE6 lack of PNG transparency. (The rule overrides the VML image that is used to replace the given CSS background-image). If you don't know what that means, then you probably haven't used the pngfix script, and this comment may be ignored :) */
+    background-position:0 0;
+    background-repeat:repeat;
+    border-color:black;
+    border-color:currentColor; /* `border-color` should match font color. Modern browsers (incl. IE9) allow the use of "currentColor" to match the current font 'color' value <http://www.w3.org/TR/css3-color/#currentcolor>. For older browsers, a default of 'black' is given before this rule. Guideline to support older browsers: if you haven't already declared a border-color for an element, be sure to do so, e.g. when you first declare the border-width. */
+    border-radius:0;
+    border-style:none;
+    border-width:medium;
+    box-sizing:content-box;
+    clear:none;
+    clip:auto;
+    color:inherit;
+    counter-increment:none;
+    counter-reset:none;
+    cursor:auto;
+    direction:inherit;
+    float:none;
+    font-family: inherit; /* As with other inherit values, this needs to be set on the root container element */
+    font-size: inherit;
+    font-style:inherit;
+    font-variant:normal;
+    font-weight:inherit;
+    height:auto;
+    letter-spacing:normal;
+    line-height:inherit;
+    list-style-type: inherit; /* Could set list-style-type to none */
+    list-style-position: outside;
+    list-style-image: none;
+    margin:0;
+    max-height:none;
+    max-width:none;
+    min-height:0;
+    min-width:0;
+    opacity:1;
+    outline:invert none medium;
+    overflow:visible;
+    padding:0;
+    position:static;
+    quotes: "" "";
+    table-layout:auto;
+    text-align:inherit;
+    text-decoration:inherit;
+    text-indent:0;
+    text-transform:none;
+    unicode-bidi:normal;
+    vertical-align:baseline;
+    visibility:inherit;
+    white-space:normal;
+    width:auto;
+    word-spacing:normal;
+    z-index:auto;
+
+    /* Proprietary and draft rules */
+    /* This section needs extending */
+    -moz-border-radius:0;
+    -webkit-border-radius:0;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    text-shadow: none;
+}
+
+/** EDIT: We don not want the "display" rule for the wrapper either inline or block **/
+#_bt_sms_main_container td, #_bt_sms_main_container tr, #_bt_sms_main_container table,  #_bt_sms_main_container th, #_bt_sms_main_container tbody, #_bt_sms_main_container tfoot, #_bt_sms_main_container thead, #_bt_sms_main_container li, #_bt_sms_main_container iframe, #_bt_sms_main_container strong, #_bt_sms_main_container legend, #_bt_sms_main_container em, #_bt_sms_main_container s, #_bt_sms_main_container cite, #_bt_sms_main_container span, #_bt_sms_main_container input, #_bt_sms_main_container sup, #_bt_sms_main_container label, #_bt_sms_main_container dfn, #_bt_sms_main_container object, #_bt_sms_main_container big, #_bt_sms_main_container q, #_bt_sms_main_container font, #_bt_sms_main_container samp, #_bt_sms_main_container acronym, #_bt_sms_main_container small, #_bt_sms_main_container img, #_bt_sms_main_container strike, #_bt_sms_main_container code, #_bt_sms_main_container sub, #_bt_sms_main_container ins, #_bt_sms_main_container textarea, #_bt_sms_main_container var, #_bt_sms_main_container a, #_bt_sms_main_container abbr, #_bt_sms_main_container applet, #_bt_sms_main_container del, #_bt_sms_main_container kbd, #_bt_sms_main_container tt, #_bt_sms_main_container b, #_bt_sms_main_container i,
+#_bt_sms_main_container time, #_bt_sms_main_container mark, #_bt_sms_main_container audio, #_bt_sms_main_container video {
+    display:inline;
+    bottom:auto;
+    left:auto;
+    right:auto;
+    top:auto;
+}
+
+#_bt_sms_main_container h3, #_bt_sms_main_container h5, #_bt_sms_main_container p, #_bt_sms_main_container h1, #_bt_sms_main_container dl, #_bt_sms_main_container dt, #_bt_sms_main_container h6, #_bt_sms_main_container ol, #_bt_sms_main_container form, #_bt_sms_main_container select, #_bt_sms_main_container option, #_bt_sms_main_container pre, #_bt_sms_main_container div, #_bt_sms_main_container h2, #_bt_sms_main_container caption, #_bt_sms_main_container h4, #_bt_sms_main_container ul, #_bt_sms_main_container address, #_bt_sms_main_container blockquote, #_bt_sms_main_container dd, #_bt_sms_main_container fieldset, #_bt_sms_main_container hr,
+#_bt_sms_main_container article, #_bt_sms_main_container aside, #_bt_sms_main_container dialog, #_bt_sms_main_container figure, #_bt_sms_main_container footer, #_bt_sms_main_container header, #_bt_sms_main_container hgroup, #_bt_sms_main_container menu, #_bt_sms_main_container nav, #_bt_sms_main_container section {
+    display:block;
+}
+
+#_bt_sms_main_container textarea {
+    display:inline-block;
+}
+
+#_bt_sms_main_container table {
+    display: table;
+}
+#_bt_sms_main_container thead {
+    display: table-header-group;
+}
+#_bt_sms_main_container tbody {
+    display: table-row-group;
+}
+#_bt_sms_main_container tfoot {
+    display: table-footer-group;
+}
+#_bt_sms_main_container tr {
+    display: table-row;
+}
+#_bt_sms_main_container th, #_bt_sms_main_container td {
+    display: table-cell;
+}
+/* == SPECIFIC ELEMENTS == */
+/* Some of these are browser defaults; some are just useful resets */
+
+#_bt_sms_main_container nav ul, #_bt_sms_main_container nav ol {
+    list-style-type:none;
+}
+#_bt_sms_main_container ul, #_bt_sms_main_container menu {
+    list-style-type:disc;
+}
+#_bt_sms_main_container ol {
+    list-style-type:decimal;
+}
+#_bt_sms_main_container ol ul, #_bt_sms_main_container ul ul, #_bt_sms_main_container menu ul, #_bt_sms_main_container ol menu, #_bt_sms_main_container ul menu, #_bt_sms_main_container menu menu {
+    list-style-type:circle;
+}
+#_bt_sms_main_container ol ol ul, #_bt_sms_main_container ol ul ul, #_bt_sms_main_container ol menu ul, #_bt_sms_main_container ol ol menu, #_bt_sms_main_container ol ul menu, #_bt_sms_main_container ol menu menu, #_bt_sms_main_container ul ol ul, #_bt_sms_main_container ul ul ul, #_bt_sms_main_container ul menu ul, #_bt_sms_main_container ul ol menu, #_bt_sms_main_container ul ul menu, #_bt_sms_main_container ul menu menu, #_bt_sms_main_container menu ol ul, #_bt_sms_main_container menu ul ul, #_bt_sms_main_container menu menu ul, #_bt_sms_main_container menu ol menu, #_bt_sms_main_container menu ul menu, #_bt_sms_main_container menu menu menu {
+    list-style-type:square;
+}
+#_bt_sms_main_container li {
+    display:list-item;
+    /* Fixes IE7 issue with positioning of nested bullets */
+    min-height:auto;
+    min-width:auto;
+}
+#_bt_sms_main_container strong {
+    font-weight:bold;
+}
+#_bt_sms_main_container em {
+    font-style:italic;
+}
+#_bt_sms_main_container kbd, #_bt_sms_main_container samp, #_bt_sms_main_container code {
+    font-family:monospace;
+}
+#_bt_sms_main_container a, #_bt_sms_main_container a *, #_bt_sms_main_container input[type=submit], #_bt_sms_main_container input[type=radio], #_bt_sms_main_container input[type=checkbox], #_bt_sms_main_container select {
+    cursor:pointer;
+}
+#_bt_sms_main_container a:hover {
+    text-decoration:underline;
+}
+#_bt_sms_main_container button, #_bt_sms_main_container input[type=submit] {
+    text-align: center;
+}
+#_bt_sms_main_container input[type=hidden] {
+    display:none;
+}
+#_bt_sms_main_container abbr[title], #_bt_sms_main_container acronym[title], #_bt_sms_main_container dfn[title] {
+    cursor:help;
+    border-bottom-width:1px;
+    border-bottom-style:dotted;
+}
+#_bt_sms_main_container ins {
+    background-color:#ff9;
+    color:black;
+}
+#_bt_sms_main_container del {
+    text-decoration: line-through;
+}
+#_bt_sms_main_container blockquote, #_bt_sms_main_container q  {
+    quotes:none; /* HTML5 */
+}
+#_bt_sms_main_container blockquote:before, #_bt_sms_main_container blockquote:after, #_bt_sms_main_container q:before, #_bt_sms_main_container q:after, #_bt_sms_main_container li:before, #_bt_sms_main_container li:after  {
+    content:"";
+}
+#_bt_sms_main_container input, #_bt_sms_main_container select {
+    vertical-align:middle;
+}
+#_bt_sms_main_container select, #_bt_sms_main_container textarea, #_bt_sms_main_container input {
+    border:1px solid #ccc;
+}
+#_bt_sms_main_container table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+#_bt_sms_main_container hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #ccc;
+    margin:1em 0;
+}
+#_bt_sms_main_container *[dir=rtl] {
+    direction: rtl;
+}
+#_bt_sms_main_container mark {
+    background-color:#ff9;
+    color:black;
+    font-style:italic;
+    font-weight:bold;
+}
+
+
+
+/* == ROOT CONTAINER ELEMENT == */
+/* This contains default values for child elements to inherit  */
+#_bt_sms_main_container {
+    font-size: medium;
+    line-height: 1;
+    direction:ltr;
+    text-align:left;
+    font-family: "Times New Roman", Times, serif; /* Override this with whatever font-family is required */
+    color: black;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    list-style-type:disc;
+}

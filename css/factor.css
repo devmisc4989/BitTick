@@ -1,0 +1,235 @@
+html, body
+{
+	background-color:#FFF;
+	width:auto;
+}
+
+table {
+border-collapse:separate;
+border-spacing:0pt;
+}
+caption, th, td {
+font-weight:normal;
+text-align:left;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+content:"";
+}
+blockquote, q {
+quotes:"" "";
+}
+
+#backgroundPopup{
+	display:none;
+	position:fixed;
+	_position:absolute; /* hack for internet explorer 6*/
+	height:100%;
+	width:100%;
+	top:0;
+	left:0;
+	background:#000000;
+	border:1px solid #cecece;
+	z-index:1;
+}
+#popupContact{
+	display:none;
+	position:fixed;
+	_position:absolute; /* hack for internet explorer 6*/
+	width:820px;
+	margin: 5px 5px;
+	padding:20px;
+	background:#FFFFFF;
+	z-index:2;
+	font-size:13px;
+}
+
+#popupContactClose{
+	width:28px;
+	height:28px;
+	background:url(../images/icon_close.png) no-repeat;
+	position:absolute;
+	right:-10px;
+	top:-10px;
+	cursor:pointer;
+	display:block;
+}
+
+
+.confirmation{
+	width:740px;
+	float:left;
+	text-align:center;
+	padding:20px 30px;
+	position:relative;
+}
+.align-left{
+	text-align: left;
+}
+.confirmation h1{
+	font-family:'Trebuchet MS', Arial, Helvetica, sans-serif;
+	font-size:30px;
+	font-weight:bold;
+	color:#111;
+}
+
+.confirmation p{
+	width:740px;
+	float:left;
+	font-family:'Trebuchet MS', Arial, Helvetica, sans-serif;
+	font-size:21px;
+	font-weight:normal;
+	color:#555;
+	line-height:30px;
+	padding:15px 0 10px 0;
+}
+
+.button-container{
+	width:300px;
+	margin:0 auto;
+	text-align:center;
+}
+
+.confirmation-user{
+	width:700px;
+	float:left;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	text-align:left;
+	padding:10px 20px;
+	overflow:hidden;
+}
+
+.confirmation-user label{
+	width:700px;
+	float:left;
+	font-family:'Trebuchet MS', Arial, Helvetica, sans-serif;
+	font-size:15px;
+	font-weight:bold;
+	color:#333;
+	padding:10px 0 0 0;
+}
+
+.confirmation-radio{
+	width:700px;
+	float:left;
+	padding:10px 0;
+}
+
+.radio{
+	padding:0 20px 0 0;
+}
+
+.popup-textarea{
+	width:300px;
+	height:150px;
+	clear:both;
+}
+
+.pagecode-textarea{
+	width:700px;
+	height:200px;
+	clear:both;
+}
+
+.confirmation-field{
+	width:340px;
+	float:left;
+}
+
+.confirmation-field label span{
+	color:#57820c;
+}
+
+.popup-textinfo{
+	font-family:'Trebuchet MS', Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#999;
+}
+
+.lp-button{
+	width:22px;
+	height:22px;
+	float:right;
+	margin:4px 5px 0 0;
+}
+
+.lp-button:hover{
+	background-position:0 -22px;
+	cursor:pointer;
+}
+
+.lp-add{
+	background:url(../images/lp_add.jpg) no-repeat;	
+}
+
+.lp-delete{
+	background:url(../images/lp_delete.png) 0 0 no-repeat;
+}
+.lp-delete:hover{
+	background:url(../images/lp_delete.png) 0 -22px no-repeat;
+}
+
+#deleteConfirm{
+	display:none;
+	position:fixed;
+	_position:absolute; /* hack for internet explorer 6*/
+	width:780px;
+	margin: 5px 5px;
+	padding:20px;
+	background:#FFFFFF;
+	z-index:2;
+	font-size:13px;
+}
+#restartCollection{
+	display:none;
+	position:fixed;
+	_position:absolute; /* hack for internet explorer 6*/
+	width:780px;
+	margin: 5px 5px;
+	padding:20px;
+	background:#FFFFFF;
+	z-index:2;
+	font-size:13px;
+}
+.clearall{
+	clear:both;
+}
+
+.pagecode-textarea {
+	height:16px;
+	width:500px;
+}
+.confirmation-user
+{
+	width:540px;
+}
+.confirmation-user label
+{
+	width:535px;
+	display: inline-block;
+}
+#variants_content{
+	width:535px;
+}
+#variants_content a.lp-delete
+{
+	float:right;
+	display:inline-block;
+	width:22px;
+	height:22px;
+	position:relative;
+}
+.fix-add
+{
+	margin:0;
+}
+.variant-text{
+	width:500px;
+}
+#pagecode{
+	color:#999;
+	resize: none;
+}
+.clear{
+	clear:both;
+}

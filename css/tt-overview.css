@@ -1,0 +1,118 @@
+.tto_intro,
+.tto_btn_container{
+    float: left;
+    width: 75%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.tto_btn_container{
+    position: absolute;
+    width: 25%;
+    top: 50px;
+    right: 15px;
+}
+.tto_btn_container .button.ok{
+    float: right;
+    margin: 0;
+}
+#tto_headlines_table{
+    width: 100%;
+    margin-top: 30px;
+}
+td.tto_table_headline{
+    width: 30%;
+}
+td.tto_table_views,
+td.tto_table_age{
+    width: 13%;
+}
+td.tto_table_result{
+    width: 16%;
+}
+td.tto_table_rec,
+td.tto_table_ctr,
+td.tto_table_action{
+    width: 7%;
+}
+td.tto_table_action{
+    position: relative;
+}
+td.tto_table_action .details_menu{
+    width: 100%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    margin: 0;
+}
+td.tto_table_action .action_trigger{
+    width: 100%;
+    height: auto;
+    top: 50%;
+    margin-top: -13px;
+}
+td.tto_table_action .details_menu .action_trigger .action_title{
+    width: 90%;
+    margin: 0;
+    padding: 0 0 0 10%;;
+    line-height: 26px;
+    text-align: left;
+}
+
+td.tto_table_headline a.tto_original{
+    cursor: pointer;
+    color: #000000;
+    text-decoration: underline;
+}
+td.tto_table_headline a.tto_original:hover{
+    text-decoration: none;
+}
+td.tto_table_headline span.tto_oh,
+td.tto_table_headline span.tto_wh{
+    line-height: 16px;
+    font-size: 90%;
+}
+td.tto_table_headline span.tto_wh{
+    font-weight: bold;
+    color: #8cb82b;
+}
+ td.tto_table_result .progress{
+    background-position: left center;
+    width: 100%;
+}
+ td.tto_table_result .bg{
+    left: 0;
+}
+ td.tto_table_result .value{
+     width: 85px;
+    left: 0;
+    margin: 0;
+    text-align: center;
+}
+td.tto_table_result .thumb_down{
+    margin-left: 5px;
+}
+
+.tto_popup{
+    display: none;
+}
+#tt_headline_alternatives{
+    margin: 0 0 15px;
+}
+#tt_headlines_form input.textbox{
+    width: 620px;
+}
+#tt_headlines_form .tt_delete_icon{
+    display: none;
+}
+#tt_headlines_form span.tt_icon{
+    float: right;
+    width: 22px;
+    height: 22px;
+    margin: 12px 40px 0 0;
+    background: url("../images/lp_delete.png") no-repeat scroll 0 0;
+    cursor: pointer;
+}
+#tt_headlines_form .tt_delete_icon:hover span.tt_icon{
+    background: url("../images/lp_delete.png") no-repeat scroll 0 -22px;
+}

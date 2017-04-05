@@ -1,0 +1,270 @@
+{
+    "rules": [
+        {
+            "value": "exit_intent",
+            "label": "Exit Intent",
+            "message_types": [
+                "slider",
+                "popup"
+            ]
+
+        },
+        {
+            "value": "attn_grabber",
+            "label": "Attention Grabber",
+            "message_types": [
+                "message_bar",
+                "slider",
+                "popup"
+            ],
+            "durations": [
+                5,
+                10,
+                20,
+                50,
+                100
+            ]
+        },
+        {
+            "value": "greeter",
+            "label": "Greeter",
+            "message_types": [
+                "message_bar",
+                "slider",
+                "popup"
+            ],
+            "durations": [
+                5,
+                10,
+                20,
+                50,
+                100
+            ]
+        },
+        {
+            "value": "always_on",
+            "label": "Always On",
+            "message_types": [
+                "message_bar",
+                "slider",
+                "embeded-box",
+                "floating-ad",
+                "peel-away"
+            ]
+        }
+    ],
+    "message_types": [
+        {
+            "value": "popup",
+            "label": "Popup"
+        },
+        {
+            "value": "message_bar",
+            "label": "Message Bar"
+        },
+        {
+            "value": "slider",
+            "label": "Slider"
+        },
+        {
+            "value": "embeded-box",
+            "label": "Embeded Box"
+        },
+        {
+            "value": "floating-ad",
+            "label": "Floating Ad"
+        },
+        {
+            "value": "peel-away",
+            "label": "Peel Away"
+        }
+    ],
+    "content_types": [
+        {
+            "value": "coupon",
+            "label": "Coupon"
+        },
+        {
+            "value": "tip",
+            "label": "Tip"
+        },
+        {
+            "value": "opt_in",
+            "label": "Newsletter Opt-In"
+        },
+        {
+            "value": "lead_gen",
+            "label": "Lead Generation"
+        }
+    ],
+    "templates": [
+        {
+            "id": 1,
+            "label": "Template 1",
+            "message_type": "popup",
+            "content_type": "coupon",
+            "thumb": "path/to/thumb"
+        },
+        {
+            "id": 2,
+            "label": "Template 2",
+            "message_type": "popup",
+            "content_type": "tip",
+            "thumb": "path/to/thumb"
+        },
+        {
+            "id": 3,
+            "label": "Template 3",
+            "message_type": "popup",
+            "content_type": "opt_in",
+            "thumb": "path/to/thumb"
+        },
+        {
+            "id": 4,
+            "label": "Template 4",
+            "message_type": "popup",
+            "content_type": "lead_gen",
+            "thumb": "path/to/thumb"
+        },
+        {
+            "id": 5,
+            "label": "Template 5",
+            "message_type": "message_bar",
+            "content_type": "coupon",
+            "thumb": "path/to/thumb"
+        },
+        {
+            "id": 6,
+            "label": "Template 6",
+            "message_type": "message_bar",
+            "content_type": "tip",
+            "thumb": "path/to/thumb"
+        },
+        {
+            "id": 7,
+            "label": "Template 7",
+            "message_type": "message_bar",
+            "content_type": "opt_in",
+            "thumb": "path/to/thumb"
+        },
+        {
+            "id": 8,
+            "label": "Template 8",
+            "message_type": "message_bar",
+            "content_type": "lead_gen",
+            "thumb": "path/to/thumb"
+        },
+        {
+            "id": 9,
+            "label": "Template 9",
+            "message_type": "slider",
+            "content_type": "coupon",
+            "thumb": "path/to/thumb"
+        },
+        {
+            "id": 10,
+            "label": "Template 10",
+            "message_type": "slider",
+            "content_type": "tip",
+            "thumb": "path/to/thumb"
+        },
+        {
+            "id": 11,
+            "label": "Template 11",
+            "message_type": "slider",
+            "content_type": "opt_in",
+            "thumb": "path/to/thumb"
+        },
+        {
+            "id": 12,
+            "label": "Template 12",
+            "message_type": "slider",
+            "content_type": "lead_gen",
+            "thumb": "path/to/thumb"
+        },
+        {
+            "id": 13,
+            "label": "Template 13",
+            "message_type": "embeded-box",
+            "content_type": "coupon",
+            "thumb": "path/to/thumb"
+        },
+        {
+            "id": 14,
+            "label": "Template 14",
+            "message_type": "embeded-box",
+            "content_type": "tip",
+            "thumb": "path/to/thumb"
+        },
+        {
+            "id": 15,
+            "label": "Template 15",
+            "message_type": "embeded-box",
+            "content_type": "opt_in",
+            "thumb": "path/to/thumb"
+        },
+        {
+            "id": 16,
+            "label": "Template 16",
+            "message_type": "embeded-box",
+            "content_type": "lead_gen",
+            "thumb": "path/to/thumb"
+        },
+        {
+            "id": 17,
+            "label": "Template 17",
+            "message_type": "floating-ad",
+            "content_type": "coupon",
+            "thumb": "path/to/thumb"
+        },
+        {
+            "id": 18,
+            "label": "Template 18",
+            "message_type": "floating-ad",
+            "content_type": "tip",
+            "thumb": "path/to/thumb"
+        },
+        {
+            "id": 19,
+            "label": "Template 19",
+            "message_type": "floating-ad",
+            "content_type": "opt_in",
+            "thumb": "path/to/thumb"
+        },
+        {
+            "id": 20,
+            "label": "Template 20",
+            "message_type": "floating-ad",
+            "content_type": "lead_gen",
+            "thumb": "path/to/thumb"
+        },
+        {
+            "id": 21,
+            "label": "Template 21",
+            "message_type": "peel-away",
+            "content_type": "coupon",
+            "thumb": "path/to/thumb"
+        },
+        {
+            "id": 22,
+            "label": "Template 22",
+            "message_type": "peel-away",
+            "content_type": "tip",
+            "thumb": "path/to/thumb"
+        },
+        {
+            "id": 23,
+            "label": "Template 23",
+            "message_type": "peel-away",
+            "content_type": "opt_in",
+            "thumb": "path/to/thumb"
+        },
+        {
+            "id": 24,
+            "label": "Template 24",
+            "message_type": "peel-away",
+            "content_type": "lead_gen",
+            "thumb": "path/to/thumb"
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "id": 1,
+    "label": "Cool Template",
+    "attr": [
+        {
+            "label": "Skin",
+            "name": "sel_skin_int",
+            "value": "",
+            "form_type": "pulldown",
+            "db_type": "int",
+            "options": [
+                {
+                    "label": "Metal",
+                    "value": 1
+                },
+                {
+                    "label": "Liquid",
+                    "value": 2
+                },
+                {
+                    "label": "Blue",
+                    "value": 3
+                }
+            ]
+        },
+        {
+            "label": "Headline",
+            "name": "form_headline_string",
+            "value": "Enter your email address to get our latest news and promotions",
+            "form_type": "string",
+            "db_type": "string"
+        },
+        {
+            "label": "Button Text",
+            "name": "form_buttontext_string",
+            "value": "Send",
+            "form_type": "string",
+            "db_type": "string"
+        },
+        {
+            "label": "Input Placeholder",
+            "name": "form_inputtext_string",
+            "value": "your email address...",
+            "form_type": "string",
+            "db_type": "string"
+        }
+    ]
+}

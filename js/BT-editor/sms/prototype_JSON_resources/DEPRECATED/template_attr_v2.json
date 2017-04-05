@@ -1,0 +1,75 @@
+{
+    "id": 1,
+    "label": "Cool Template",
+    "areas": [
+        {
+           "label":"Area Label text from JSON",
+            "attr": [
+                {
+                    "label": "Skin",
+                    "name": "sel_skin_int",
+                    "value": 1,
+                    "form_type": "pulldown",
+                    "db_type": "int",
+                    "options": [
+                        {
+                            "label": "Metal",
+                            "value": 1
+                        },
+                        {
+                            "label": "Liquid",
+                            "value": 2
+                        },
+                        {
+                            "label": "Blue",
+                            "value": 3
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+
+            "attr": [
+                {
+                    "label": "Headline",
+                    "name": "form_headline_string",
+                    "value": "Enter your email address to get our latest news and promotions",
+                    "form_type": "string",
+                    "db_type": "string"
+                }
+            ]
+        },
+        {
+            "selector": {
+                "type": "checkbox",
+                "label": "Show Button?",
+                "name": "checkbox_1",
+                "checked":false
+            },
+
+            "attr": [
+                {
+                    "label": "Button Text",
+                    "name": "form_buttontext_string",
+                    "value": "Send",
+                    "form_type": "string",
+                    "db_type": "string",
+                    "depends_on": "checkbox_1"
+                }
+            ]
+        },
+        {
+
+            "attr": [
+                {
+                    "label": "Input Placeholder",
+                    "name": "form_inputtext_string",
+                    "value": "your email address...",
+                    "form_type": "string",
+                    "db_type": "string"
+                }
+            ]
+        }
+    ]
+}

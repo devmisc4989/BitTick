@@ -1,0 +1,68 @@
+.etracker .border {
+    border: 3px solid #FF8700;
+}
+
+.action-buttons{
+    margin: 15px;
+}
+.button{
+    text-align: center;
+    font-weight: bold;
+    border: none;
+    color: white;
+    cursor: pointer;
+    vertical-align: middle;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 8px;
+
+}
+
+
+
+.button.disabled{
+    opacity: .6;
+    cursor: default;
+}
+
+.action-buttons.right{
+    text-align: right;
+}
+.button-cancel{
+  background: grey;
+}
+
+.button-ok, .etracker .button-ok.disabled:hover{
+    background: #FF8700;
+}
+
+.etracker .button-ok:hover{
+    background: #D75F00;
+}
+
+.bt-badge{
+    border-radius: 50%;
+    font-weight: bold;
+    padding: 2px .4em;
+}
+.etracker .bt-badge{
+    color: #ffffff;
+    background:#367288 ;
+}
+
+.spacer{
+    height: 1em;
+}
+
+.module-heading{
+    margin: 0 0 .5em;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 20px;
+}
+.etracker .module-heading{
+    color: #FF8700;
+    border-bottom: 1px solid #CCCCCC;
+}
+hr{margin: 10px 0 ; border-color: #CCCCCC;}

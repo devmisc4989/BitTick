@@ -1,0 +1,386 @@
+[
+    {
+        "type": "text",
+        "name": "font-family",
+        "values": "[ [<family-name>|<generic-family>] [,<family-name>|<generic-family>]* ] |inherit",
+        "help": "Specifies the font family for text"
+    },
+    {
+        "type": "text",
+        "name": "font-size",
+        "values": "<absolute-size>|<relative-size>|<length>|<percentage>|inherit",
+        "help": "Specifies the font size of text"
+    },
+    {
+        "type": "text",
+        "name": "font-weight",
+        "values": "normal | bold | bolder | lighter | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900 |inherit",
+        "help": "Specifies the weight of a font"
+    },
+    {
+        "type": "text",
+        "name": "font-style",
+        "values": "normal | italic | oblique |inherit",
+        "help": "Specifies the font style for text"
+    },
+    {
+        "type": "text",
+        "name": "font-size-adjust",
+        "values": "",
+        "help": "Preserves the readability of text when font fallback occurs"
+    },
+    {
+        "type": "text",
+        "name": "color",
+        "values": "<color>|inherit",
+        "help": "Sets the color of text"
+    },
+    {
+        "type": "text",
+        "name": "text-transform",
+        "values": "capitalize | uppercase | lowercase | none |inherit",
+        "help": "Controls the capitalization of text"
+    },
+    {
+        "type": "text",
+        "name": "text-decoration",
+        "values": "none | [ underline || overline || line-through || blink ] |inherit",
+        "help": "Specifies the decoration added to text"
+    },
+    {
+        "type": "text",
+        "name": "letter-spacing",
+        "values": "normal |<length>|inherit",
+        "help": "Increases or decreases the space between characters in a text"
+    },
+    {
+        "type": "text",
+        "name": "word-spacing",
+        "values": "normal |<length>|inherit",
+        "help": "Increases or decreases the space between words in a text"
+    },
+    {
+        "type": "text",
+        "name": "line-height",
+        "values": "normal |<number>|<length>|<percentage>|inherit",
+        "help": "Sets the line height"
+    },
+    {
+        "type": "text",
+        "name": "text-align",
+        "values": "left | right | center | justify |inherit",
+        "help": "Specifies the horizontal alignment of text"
+    },
+    {
+        "type": "text",
+        "name": "vertical-align",
+        "values": "baseline | sub | super | top | text-top | middle | bottom | text-bottom |<percentage>|<length>|inherit",
+        "help": "Sets the vertical alignment of an element"
+    },
+    {
+        "type": "text",
+        "name": "direction",
+        "values": "ltr | rtl |inherit",
+        "help": "Specifies the text direction/writing direction"
+    },
+    {
+        "type": "background",
+        "name": "background-color",
+        "values": "<color>|inherit",
+        "help": "Sets the background color of an element"
+    },
+    {
+        "type": "background",
+        "name": "background-image",
+        "values": "<uri>| none |inherit",
+        "help": "Sets the background image for an element"
+    },
+    {
+        "type": "background",
+        "name": "background-repeat",
+        "values": "repeat | repeat-x | repeat-y | no-repeat |inherit",
+        "help": "Sets how a background image will be repeated"
+    },
+    {
+        "type": "background",
+        "name": "background-position",
+        "values": "[ [<percentage>|<length>| left | center | right ] [<percentage>|<length>| top | center | bottom ]? ] | [ [ left | center | right ] || [ top | center | bottom ] ] |inherit",
+        "help": "Sets the starting position of a background image"
+    },
+    {
+        "type": "background",
+        "name": "background-attachment",
+        "values": "scroll | fixed |inherit",
+        "help": "Sets whether a background image is fixed or scrolls with the rest of the page"
+    },
+    {
+        "type": "background",
+        "name": "opacity",
+        "values": "<number>|inherit",
+        "help": "Sets the opacity level for an element"
+    },
+    {
+        "type": "dimensions",
+        "name": "width",
+        "values": "<length>|<percentage>| auto |inherit",
+        "help": "Sets the width of an element"
+    },
+    {
+        "type": "dimensions",
+        "name": "height",
+        "values": "<length>|<percentage>| auto |inherit",
+        "help": "Sets the height of an element"
+    },
+    {
+        "type": "dimensions",
+        "name": "top",
+        "values": "<length>|<percentage>| auto |inherit",
+        "help": "Specifies the top position of a positioned element"
+    },
+    {
+        "type": "dimensions",
+        "name": "right",
+        "values": "<length>|<percentage>| auto |inherit",
+        "help": "Specifies the right position of a positioned element"
+    },
+    {
+        "type": "dimensions",
+        "name": "bottom",
+        "values": "<length>|<percentage>| auto |inherit",
+        "help": "Specifies the bottom position of a positioned element"
+    },
+    {
+        "type": "dimensions",
+        "name": "left",
+        "values": "<length>|<percentage>| auto |inherit",
+        "help": "Specifies the left position of a positioned element"
+    },
+    {
+        "type": "dimensions",
+        "name": "margin-top",
+        "values": "",
+        "help": "Sets the top margin of an element"
+    },
+    {
+        "type": "dimensions",
+        "name": "margin-right",
+        "values": "",
+        "help": "Sets the right margin of an element"
+    },
+    {
+        "type": "dimensions",
+        "name": "margin-bottom",
+        "values": "",
+        "help": "Sets the bottom margin of an element"
+    },
+    {
+        "type": "dimensions",
+        "name": "margin-left",
+        "values": "",
+        "help": "Sets the left margin of an element"
+    },
+    {
+        "type": "dimensions",
+        "name": "padding-top",
+        "values": "",
+        "help": "Sets the top padding of an element"
+    },
+    {
+        "type": "dimensions",
+        "name": "padding-right",
+        "values": "",
+        "help": "Sets the right padding of an element"
+    },
+    {
+        "type": "dimensions",
+        "name": "padding-bottom",
+        "values": "",
+        "help": "Sets the bottom padding of an element"
+    },
+    {
+        "type": "dimensions",
+        "name": "padding-left",
+        "values": "",
+        "help": "Sets the left padding of an element"
+    },
+    {
+        "type": "dimensions",
+        "name": "box-shadow",
+        "values": "",
+        "help": "Attaches one or more drop-shadows to the box"
+    },
+    {
+        "type": "border",
+        "name": "border-top-width",
+        "values": "",
+        "help": "Sets the width of the top border"
+    },
+    {
+        "type": "border",
+        "name": "border-right-width",
+        "values": "",
+        "help": "Sets the width of the right border"
+    },
+    {
+        "type": "border",
+        "name": "border-bottom-width",
+        "values": "",
+        "help": "Sets the width of the bottom border"
+    },
+    {
+        "type": "border",
+        "name": "border-left-width",
+        "values": "",
+        "help": "Sets the width of the left border"
+    },
+    {
+        "type": "border",
+        "name": "border-top-color",
+        "values": "",
+        "help": "Sets the color of the top border"
+    },
+    {
+        "type": "border",
+        "name": "border-right-color",
+        "values": "",
+        "help": "Sets the color of the right border"
+    },
+    {
+        "type": "border",
+        "name": "border-bottom-color",
+        "values": "",
+        "help": "Sets the color of the bottom border"
+    },
+    {
+        "type": "border",
+        "name": "border-left-color",
+        "values": "",
+        "help": "Sets the color of the left border"
+    },
+    {
+        "type": "border",
+        "name": "border-top-style",
+        "values": "",
+        "help": "Sets the style of the top border"
+    },
+    {
+        "type": "border",
+        "name": "border-right-style",
+        "values": "",
+        "help": "Sets the style of the right border"
+    },
+    {
+        "type": "border",
+        "name": "border-bottom-style",
+        "values": "",
+        "help": "Sets the style of the bottom border"
+    },
+    {
+        "type": "border",
+        "name": "border-left-style",
+        "values": "",
+        "help": "Sets the style of the left border"
+    },
+    {
+        "type": "border",
+        "name": "border-radius",
+        "values": "",
+        "help": "Sets the radius of the border corners"
+    },
+    {
+        "type": "layout",
+        "name": "position",
+        "values": "static | relative | absolute | fixed |inherit",
+        "help": "Specifies the type of positioning method used for an element (static, relative, absolute or fixed)"
+    },
+    {
+        "type": "layout",
+        "name": "display",
+        "values": "inline | block | list-item | inline-block | table | inline-table | table-row-group | table-header-group | table-footer-group | table-row | table-column-group | table-column | table-cell | table-caption | none |inherit",
+        "help": "Specifies the type of box an element should generate"
+    },
+    {
+        "type": "layout",
+        "name": "visibility",
+        "values": "visible | hidden | collapse |inherit",
+        "help": "Specifies whether or not an element is visible"
+    },
+    {
+        "type": "layout",
+        "name": "z-index",
+        "values": "auto |<integer>|inherit",
+        "help": "Sets the stack order of a positioned element"
+    },
+    {
+        "type": "layout",
+        "name": "overflow-x",
+        "values": "",
+        "help": "Specifies whether or not to clip the left/right edges of the content, if it overflows the element's content area"
+    },
+    {
+        "type": "layout",
+        "name": "overflow-y",
+        "values": "",
+        "help": "Specifies whether or not to clip the top/bottom edges of the content, if it overflows the element's content area"
+    },
+    {
+        "type": "layout",
+        "name": "white-space",
+        "values": "normal | pre | nowrap | pre-wrap | pre-line |inherit",
+        "help": "Specifies how white-space inside an element is handled"
+    },
+    {
+        "type": "layout",
+        "name": "clip",
+        "values": "<shape>| auto |inherit",
+        "help": "Clips an absolutely positioned element"
+    },
+    {
+        "type": "layout",
+        "name": "float",
+        "values": "left | right | none |inherit",
+        "help": "Specifies whether or not a box should float"
+    },
+    {
+        "type": "layout",
+        "name": "clear",
+        "values": "none | left | right | both |inherit",
+        "help": "Specifies which sides of an element where other floating elements are not allowed"
+    },
+    {
+        "type": "other",
+        "name": "cursor",
+        "values": "[ [<uri>,]* [ auto | crosshair | default | pointer | move | e-resize | ne-resize | nw-resize | n-resize | se-resize | sw-resize | s-resize | w-resize | text | wait | help | progress ] ] |inherit",
+        "help": "Specifies the type of cursor to be displayed"
+    },
+    {
+        "type": "other",
+        "name": "list-style-image",
+        "values": "<uri>| none |inherit",
+        "help": "Specifies an image as the list-item marker"
+    },
+    {
+        "type": "other",
+        "name": "list-style-position",
+        "values": "inside | outside |inherit",
+        "help": "Specifies if the list-item markers should appear inside or outside the content flow"
+    },
+    {
+        "type": "other",
+        "name": "list-style-type",
+        "values": "disc | circle | square | decimal | decimal-leading-zero | lower-roman | upper-roman | lower-greek | lower-latin | upper-latin | armenian | georgian | lower-alpha | upper-alpha | none |inherit",
+        "help": "Specifies the type of list-item marker"
+    },
+    {
+        "type": "other",
+        "name": "marker-offset",
+        "values": "",
+        "help": "#N/A"
+    },
+    {
+        "type": "custom",
+        "name": "",
+        "values": "",
+        "help": "#N/A"
+    }
+]

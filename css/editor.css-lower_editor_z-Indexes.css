@@ -1,0 +1,70 @@
+#editor_page .mv_edit_div
+{
+   /* z-index:990901;*/
+    z-index:1601;
+}
+
+#editor_page .ontop
+{
+    /*z-index: 990900 !important;*/
+    z-index: 1600 !important;
+}
+
+#editor_page .BTMouseOverTop{
+   /* z-index:990902;*/
+    z-index:1602;
+}
+#editor_page .BTMouseOverBottom {
+    /*z-index:990902;*/
+    z-index:1602;
+}
+#editor_page .BTMouseOverLeft {
+   /* z-index:990902;*/
+    z-index:990902;
+}
+#editor_page .BTMouseOverRight {
+    /*z-index:990902;*/
+    z-index:1602;
+}
+
+#editor_page .BTEditedElementTop{
+    /*z-index:990901;*/
+    z-index:1601;
+}
+#editor_page .BTEditedElementBottom {
+   /* z-index:990901;*/
+    z-index:1601;
+}
+#editor_page .BTEditedElementLeft {
+    /*z-index:990901;*/
+    z-index:1601;
+}
+#editor_page .BTEditedElementRight {
+   /* z-index:990901;*/
+    z-index:1601;
+}
+
+#editor_page #BTMouseOverEditorMenu {
+   /* z-index:990903;*/
+    z-index:1603;
+}
+
+#editor_page .bt_moving_element
+{
+    /*z-index:991504 !important;*/
+    z-index:1700 !important;
+}
+
+/*.ui-draggable { cursor: move; }*/
+#editor_page .ui-resizable-e {
+   /* z-index:991105 !important;*/
+    z-index:1700 !important;
+}
+#editor_page .ui-resizable-s {
+    /*z-index:991105 !important;*/
+    z-index:1700 !important;
+}
+#editor_page .ui-resizable-se {
+   /* z-index:991105 !important;*/
+    z-index:1700 !important;
+}

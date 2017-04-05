@@ -1,0 +1,885 @@
+.clear{
+    clear: both;
+}
+.sep{
+    clear: both;
+    height: 8px;
+}
+.smallsep{
+    clear: both;
+    height: 4px;
+}
+
+/**** For edit mode ****/
+.table-list td a.disabled,
+.table-list td a.disabled:hover{
+    color: #828896 !important;
+    cursor: text;
+}
+
+tr.table-list td.disabled{
+    color: #828896 !important;
+}
+
+/****Personalization Step 3****/
+h1.left-float-title{
+    float: left;
+    width: 100%;
+    margin: 0 0 15px;
+}
+
+a.perso_wizard_link{
+    font-size: 14px;
+    font-family: arial,helvetica,sans-serif;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a.perso_wizard_link{
+    width: auto;
+    padding: 0;
+    text-align: left;
+}
+
+.etracker a.perso_wizard_link,
+a.etracker.enable-perso-link{
+    font-size: 12px;
+    color: #0d6d9d;
+    line-height: 14px;
+}
+
+a.perso_wizard_link:hover{
+    text-decoration: none;
+}
+
+#perso-headline{
+    display: inline-block;
+    float: left;
+    width: 100%;
+    margin: 0 5px 0 0;
+    padding: 0 0 2px;
+    font-size: 15px;
+    font-family: 'Ubuntu',sans-serif;
+    font-weight: bold;
+    color: #333333;
+}
+.etracker#perso-headline{
+    font-size: 12px;
+    font-weight: 400;
+    font-family: arial,helvetica,sans-serif;
+    color: #333333;
+    line-height: 20px;
+}
+
+/*******************/
+
+.etracker#frmVisualABStep3{
+    margin: -10px 0 0;
+    font-size: 12px !important;
+    font-family: arial,helvetica,sans-serif;
+    color: #333333;
+}
+
+#steps-perso-radio-container{
+    float: left;
+    width: auto;
+    padding-right: 50px;
+}
+
+.perso-type-radio{
+    float: left;
+    cursor: pointer;
+    margin: 10px 0 0 5px;
+}
+
+.confirmation-user label.perso-type-label{
+    display: inline-block;
+    float: left;
+    width: auto;
+    margin: 8px 0 0 3px;
+    padding: 0;
+    font-size: 14px;
+    font-family: 'Ubuntu',sans-serif;
+    font-weight: normal;
+    cursor: pointer;
+}
+label.etracker.perso-type-label{
+    font-weight: 600;
+    font-size: 12px;
+    font-family: arial,helvetica,sans-serif;
+    color: #333333;
+}
+.confirmation-user label.disabled.perso-type-label{
+    color: #999999;
+    cursor: default;
+}
+
+/******/
+
+#steps-perso-upgrade-container{
+    float: left;
+    width: auto;
+    margin: 48px 0 0;
+}
+
+a.etracker.step-product-upgrade .upgrade-text{
+    float: left;
+    font-weight: 600;
+    font-size: 12px !important;
+    font-weight: bold;
+    font-family: arial,helvetica,sans-serif;
+    color: #367288;
+    text-align: right;
+    text-decoration: none;
+    cursor: pointer;
+}
+a.etracker.step-product-upgrade:hover span{
+    text-decoration: underline;
+}
+
+span.upgrade-rocket{
+    display: inline-block;
+    float: left;
+    margin: -6px 0 0;
+    padding-left: 6px;
+    font-size: 24px;
+    color: #367288;
+    cursor: pointer;
+}
+
+/*******/
+
+#step-perso-bottom-container{
+    width: 99%;
+    min-height: 69px;
+    height: auto;
+    margin: 12px 0.25% 8px;
+    padding: 3px 0 0;
+    border: 1px solid #999999;
+    overflow: visible;
+}
+#step-perso-bottom-container a.icon-edit-rule{
+    display: inline-block;
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin: 0 0 5px;
+    background: #FF8700;
+    line-height: 30px;
+    text-align: center;
+}
+a.icon-edit-rule .fa{
+    margin: 0;
+    background: #FF8700;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: normal;
+    color: #FFFFFF;
+    line-height: 30px;
+}
+
+#step-perso-bottom-container a.rule-table-link{
+    float: right;
+    margin: 0;
+}
+.etracker#step-perso-bottom-container a.perso_wizard_link{
+    color: #FF8700;
+}
+.etracker#step-perso-bottom-container a.icon-edit-rule:hover,
+.etracker#step-perso-bottom-container a.icon-edit-rule:hover .fa{
+    background: #D75F00;
+}
+
+#perso-copy-text{
+    display: inline-block;
+    width: 98%;
+    text-align: center;
+    margin: 0 1%;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Ubuntu',sans-serif;
+    line-height: 75px;
+    color: #555555;
+}
+.etracker#perso-copy-text{
+    font-size: 12px;
+    font-weight: normal;
+    font-family: arial,helvetica,sans-serif;
+    color: #333333;
+}
+.smaller#perso-copy-text{
+    line-height: 18px;
+}
+
+#perso-complete-rule{
+    display: none;
+    margin-top: 15px;
+}
+#perso-table-container{
+    display: none;
+    margin-top: 8px;
+}
+
+#edit-rule-link-container{
+    float: left;
+    width: 50%;
+    margin: 0;
+    padding: 7px 0;
+}
+#edit-rule-link-container a{
+    float: right;
+    text-decoration: underline;
+    cursor:pointer;
+    font-weight: 600;
+    text-align: right;
+}
+#edit-rule-link-container a:hover{
+    text-decoration: none;
+}
+
+.etracker#edit-rule-link-container a,
+.etracker#perso-complete-rule span{
+    font-size: 12px;
+    font-family: arial,helvetica,sans-serif;
+    color: #FF8700;
+}
+
+#perso-complete-rule span,
+.etracker#perso-complete-rule span{
+    float: left;
+    display: inline-block;
+    margin: 0 5px;
+    font-weight: 600;
+    color: #000000;
+    text-decoration: none;
+    line-height: 30px;
+}
+
+#rule-per-variant{
+    width: 100%;
+}
+table.wizard-table#rule-per-variant th{
+    background: #999999;
+    color: #FFFFFF;
+}
+#rule-per-variant.wizard-table td{
+    width: 50%;
+    padding: 3px 3px 2px;
+}
+#rule-per-variant.wizard-table span{
+    line-height: 32px !important;
+}
+
+.disabled-perso.links{
+    margin-right: 3px !important;
+}
+
+/**************** Personalization popup **************************/
+
+.perso_rule_overlay {
+    display: none;
+    position: fixed;
+    z-index: 991115;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #777777;
+    opacity: 0.7;
+    overflow: hidden;
+}
+.perso_rule_overlay.etracker {
+    background: #FFFFFF;
+}
+.perso_rule_wrapper{
+    display: none;
+    position: fixed; 
+    z-index: 991116;
+    width: 925px;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    margin: -175px 0 0 -450px;
+    padding: 5px 12px 8px;
+    background: #FFFFFF;
+    border: 4px solid transparent;
+    border-radius: 5px;
+    font-family: Verdana, Geneva,sans-serif;
+    font-size: 12px !important;
+    line-height: 18px !important;
+    overflow: visible;
+}
+.perso_rule_wrapper.etracker{
+    border-color: #f68900;
+    border-width: 3px;
+    border-radius: 0;
+    font-size: 12px !important;
+    font-family: arial,helvetica,sans-serif;
+}
+
+img#perso_rule_editor_close,
+img#perso_rule_confirm_close,
+img#perso_rule_cancel_close{
+    position: absolute;
+    z-index: 991118;
+    width: 36px;
+    height: 36px;
+    top: -17px;
+    right: -20px;
+    padding: 0;
+    cursor: pointer;
+}
+
+#perso_rule_main_container{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: visible;
+}
+#perso_rule_loading{
+    display: none;
+    position: absolute;
+    z-index: 991130;
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    background: #FFFFFF url(../../images/ajax-loader.gif) no-repeat center;
+    opacity: 0.5;
+}
+#perso_rule_main_container h1{
+    color: #111111;
+    font-family: arial,helvetica,sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+.etracker#perso_rule_main_container h1{
+    border-bottom: 1px solid #999999;
+    font-size: 12px;
+    font-family: arial,helvetica,sans-serif;
+    line-height: 24px;
+    color: #FF8700;
+}
+
+#perso_intro_text{
+    margin: 5px 0 0;
+    font-size: 12px;
+    font-family: arial,helvetica,sans-serif;
+    line-height: 20px;
+}
+
+#perso_rule_list_title{
+    margin-top: 5px;
+    font-size: 12px;
+    font-family: arial,helvetica,sans-serif;
+    font-weight: 600;
+    color: #333333;
+}
+
+#perso_rule_list_container,
+#perso_rule_param_container{
+    float: left;
+    width: 245px;
+    height: 230px;
+    margin: 5px 0 0;
+}
+#perso_rule_param_container{
+    position: relative;
+    width: 655px;
+    height: auto;
+    margin-left: 12px;
+}
+
+#perso_rule_list{
+    width: 242px;
+    height: 160px;
+    border: 1px solid #888888;
+    overflow: auto;
+}
+#perso_rule_list span{
+    display: inline-table;
+    width: 237px;
+    height: 24px;
+    margin: 0;
+    padding-left: 5px;
+    overflow: hidden;
+    font-size: 12px;
+    font-family: arial,helvetica,sans-serif;
+    font-weight: 600;
+    line-height: 26px;
+    cursor: pointer;
+}
+.etracker#perso_rule_list span{
+    color: #333333;
+}
+#perso_rule_list span:hover{
+    background: #F0F0F0;
+}
+#perso_rule_list span.selected{
+    background: #367288;
+    color: #FFFFFF;
+}
+
+#perso_rule_actions{
+    width: 230px;
+    margin: 2px 0 0;
+}
+
+#perso_rule_actions a{
+    float: left;
+    width: auto;
+    height: auto;
+    margin: 3px 0 0;
+    background-position: 0 0;
+    font-size: 14px;
+    font-family: arial,helvetica,sans-serif;
+    font-weight: 600;
+    color: #8DAF0F;
+    text-decoration: underline;
+}
+#perso_rule_actions a.etracker{
+    margin: 4px 0 0 2px;
+    font-size: 12px;
+    color: #ff8700;
+    text-decoration: none;
+}
+#perso_rule_actions a:hover{
+    text-decoration: none;
+}
+#perso_rule_actions a.etracker:hover{
+    text-decoration: none;
+}
+
+.perso_sharp_icon{
+    float: left;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    background: #ff8700;
+    text-align: center;
+}
+
+.etracker.custom_tenant_bg:hover .perso_sharp_icon,
+.etracker.custom_tenant_bg:hover .fa,
+.etracker.perso_rule_condition_del:hover,
+.etracker.perso_rule_condition_del:hover .fa{
+    background: #D75F00;
+}
+.etracker.custom_tenant_bg:hover span{
+    color: #D75F00;
+}
+
+.minus-plus-icons.fa{
+    font-size: 12px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+#perso_rule_actions a span{
+    display: inline-block;
+    margin-left: 5px;
+    display: inline-block;
+    font-family: arial,helvetica,sans-serif;
+    line-height: 30px;
+}
+
+label.perso_rule_hidden_title{
+    min-width: 100%;
+}
+p.perso_rule_hidden_title{
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 14px;
+    font-family: 'Ubuntu',sans-serif;
+    color: #555555;
+}
+p.etracker.perso_rule_hidden_title{
+    font-family: arial,helvetica,sans-serif;
+    color: #333333;
+    line-height: 18px;
+}
+
+.perso_rule_cond_title{
+    margin: 0;
+}
+#perso_rule_parameters{
+    display: none;
+    position: relative;
+    margin: 2px 0 0 5px;
+    padding: 2px 0 0;
+    border-bottom: 1px solid grey;
+}
+label.perso_rule_label{
+    display: inline-block;
+    float: left;
+    width: 100%;
+    margin: 0 5px 0 0;
+    padding: 0 0 2px;
+    font-size: 15px;
+    font-family: 'Ubuntu',sans-serif;
+    font-weight: bold;
+    color: #333333;
+}
+.etracker.perso_rule_label{
+    width: 225px;
+    margin-top: 2px;
+    padding: 0;
+    font-size: 12px;
+    font-family: arial,helvetica,sans-serif;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+p.etracker.perso_rule_hidden_title{
+    margin-top: 0;
+    font-weight: 400;
+    font-size: 12px;
+    font-family: arial,helvetica,sans-serif;
+}
+.etracker.perso_rule_hidden_title.perso_rule_label{
+    font-size: 12px;
+}
+
+.perso_rule_input{
+    float: left;
+    width: 230px;
+    margin: 0 7px 3px 0;
+    border: 1px solid #BFBFBF;
+    border-radius: 5px;
+    font-family: 'Ubuntu',sans-serif;
+}
+.etracker.perso_rule_input{
+    width: 321px;
+    font-size: 12px;
+    font-family: arial,helvetica,sans-serif;
+}
+
+.text.perso_rule_input{
+    height: 35px;
+    padding: 0 5px;
+    line-height: 35px;
+}
+.etracker.text.perso_rule_input{
+    height: 25px;
+    padding-top: 2px;
+    box-sizing: border-box;
+    border-radius: 0;
+    line-height: 25px;
+}
+.subcond.perso_rule_input{
+    width: 222px;
+    height: 20px;
+    padding: 2px 5px;
+    line-height: 20px;
+}
+.etracker.subcond.perso_rule_input{
+    height: 22px;
+    padding: 0 5px;
+    box-sizing: border-box;
+    line-height: 22px;
+}
+
+.select.perso_rule_input{
+    width: 220px;
+    padding: 4px 2px;
+    border-radius: 0;
+    font-size: 12px;
+}
+.etracker.select.perso_rule_input{
+    height: 22px;
+    padding: 0;
+    font-size: 12px;
+}
+.etracker#perso_rule_validif{
+    width: 321px;
+}
+
+.small.perso_rule_input{
+    width:  105px;
+}
+.etracker.small.perso_rule_input{
+    height: 22px;
+}
+
+.geoip.perso_rule_input{
+    width: 162px;
+}
+.geostate.geoip.perso_rule_input{
+    margin-left: 83px;
+}
+
+.conditions_select option,
+.conditions_select optgroup{
+    color: black;
+}
+.conditions_select option.disabled,
+.disabled.conditions_select {
+    color: grey;
+}
+
+span.perso_rule_tooltip{
+    display: inline-block;
+    float: left;
+    margin: 6px 10px 0 2px;
+    font-size: 16px;
+    color: #808080;
+    cursor: text;
+}
+
+#perso_rule_conditions{
+    width: 98.5%;
+    min-height: 38px;
+    max-height: 215px;
+    height: auto;
+    padding: 6px 1% 6px 0.5%;
+    background: #F8F8F8;
+    border-top: 1px solid grey;
+}
+
+.perso_rule_condition_container{
+    min-height: 25px;
+    padding: 5px 0;
+}
+
+.perso_rule_condition_del.perso_sharp_icon{
+    float: right;
+    cursor: pointer;
+}
+.etracker.perso_rule_condition_del{
+    margin-top: -4px;
+}
+
+.perso_rule_add_cond{
+    display: none;
+    min-width: 200px;
+    width: auto;
+    min-height: 20px;
+    height: auto;
+    margin: 10px 0 5px 10px;
+    background-position: 0 0;
+    font-size: 14px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: normal;
+    color: #8DAF0F;
+    text-decoration: underline;
+}
+.perso_rule_add_cond:hover{
+    text-decoration: none;
+}
+
+.etracker.perso_rule_add_cond{
+    font-size: 12px;
+    font-weight: bold;
+    font-family: arial,helvetica,sans-serif;
+    color: #ff8700;
+    text-decoration: none;
+}
+
+a.perso_rule_add_cond span{
+    margin-left: 5px;
+    display: inline-block;
+    font-family: arial,helvetica,sans-serif;
+    line-height: 30px;
+}
+
+.perso_rule_btn_container{
+    width: auto;
+    height: auto;
+}
+.etracker.perso_rule_btn_container{
+    float: right;
+}
+.perso_rule_btn{
+    float: left;
+    margin: 5px 0 5px 0;
+    border: 0;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-weight: bold;
+    cursor: pointer;
+}
+.perso_rule_cancelbtn{
+    height: 36px;
+    padding-left: 12px;
+    background: url("../../images/back-button-arrow.png") no-repeat center left;
+    font-size: 14px;
+    color: #8DAF0F;
+    line-height: 32px;
+    text-decoration: underline;
+}
+.perso_rule_cancelbtn:hover{
+    text-decoration: none;
+}
+
+.perso_rule_savebtn{
+    height: 36px;
+    margin-left: 15px;
+    padding: 0 15px;
+    background: url(../../images/btn_bg.jpg) repeat-x;
+    background-position: 0 -38px;
+    border: 1px solid #8DAF0F;
+    font-size: 15px;
+}
+.perso_rule_savebtn:hover{
+    border: solid 1px #4F870E;
+}
+
+.etracker.perso_rule_cancelbtn{
+    height: 30px;
+    padding: 0 15px;
+    background: grey;
+    border-radius: 0;
+    font-size: 12px;
+    font-family: arial,helvetica,sans-serif;
+    color: #FFFFFF;
+    line-height: 12px;
+    text-decoration: none;
+}
+.etracker.perso_rule_savebtn{
+    height: 30px;
+    margin-left: 10px;
+    background: #F58900;
+    border: 0;
+    border-radius: 0;
+    font-size: 12px;
+    font-family: arial,helvetica,sans-serif;
+}
+.etracker.perso_rule_savebtn:hover{
+    background: #D75F00;
+}
+
+#perso_rule_confirm_overlay,
+#perso_rule_cancel_overlay{
+    z-index: 991120;
+    background: #000000;
+    opacity: 0.5;
+}
+#perso_rule_confirm_wrapper,
+#perso_rule_cancel_wrapper,
+#noperso_rule_wrapper{
+    z-index: 991121;
+    width: 400px;
+    height: 150px;
+    margin: -80px 0 0 -210px;
+}
+#perso_rule_confirm_close,
+#perso_rule_cancel_close{
+    z-index: 991123;
+}
+
+#perso_rule_confirm_wrapper.etracker,
+#perso_rule_cancel_wrapper.etracker,
+#noperso_rule_wrapper.etracker{
+    height: 120px;
+    margin-top: -65px;
+}
+
+.perso_confirm_popup .perso_rule_btn_container{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 15px;
+}
+.perso_confirm_popup .etracker.perso_rule_btn_container{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 10px;
+}
+
+.perso_confirm_popup h1{
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #111111;
+    line-height: 40px;
+    clear: both;
+}
+.perso_confirm_popup p{
+    margin-top: 10px;
+}
+.perso_confirm_popup h1.etracker{
+    border-bottom: 1px solid #999999;
+    font-size: 12px;
+    font-family: arial,helvetica,sans-serif;
+    line-height: 16px;
+    color: #ff8700;
+}
+
+
+/****************** Specific for tenant = blacktri *********************/
+#step-perso-bottom-container a.blacktri.icon-edit-rule,
+.blacktri.perso_rule_condition_del{
+    background: transparent;
+}
+#step-perso-bottom-container a.blacktri.icon-edit-rule span.bt_icon{
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    margin: 5px 0 0 3px;
+    background: url("../../images/lp_add.jpg") no-repeat scroll 0 0;
+}
+#step-perso-bottom-container a.blacktri.icon-edit-rule:hover span.bt_icon{
+    background: url("../../images/lp_add.jpg") no-repeat scroll 0 -21px;
+}
+
+#perso_rule_actions a.blacktri .perso_sharp_icon,
+.blacktri.perso_rule_add_cond .perso_sharp_icon{
+    display: none;
+}
+#perso_rule_actions a.blacktri,
+.blacktri.perso_rule_add_cond {
+    height: 21px;
+    margin: 5px 0 0;
+    padding-left: 22px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    line-height: 22px;
+}
+.blacktri.perso_rule_add_cond {
+    margin: 8px 0 10px 5px;
+}
+#perso_rule_actions .blacktri#perso_rule_add_action,
+.blacktri.perso_rule_add_cond {
+    background-image: url("../../images/lp_add.jpg");
+}
+#perso_rule_actions .blacktri#perso_rule_del_action{
+    padding-bottom: 1px;
+    background-image: url("../../images/lp_delete.png");
+}
+#perso_rule_actions .blacktri#perso_rule_add_action:hover,
+.blacktri.perso_rule_add_cond:hover {
+    background-position: 0 -21px;
+}
+#perso_rule_actions .blacktri#perso_rule_del_action:hover{
+    background-position: 0 -22px;
+}
+#perso_rule_actions a.blacktri span,
+.blacktri.perso_rule_add_cond span{
+    display: inline-block;
+    text-decoration: underline;
+    line-height: 22px;  
+}
+#perso_rule_actions a.blacktri:hover span,
+.blacktri.perso_rule_add_cond:hover span{
+    text-decoration: none;
+}
+
+.blacktri.perso_rule_condition_del span.bt_icon{
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    margin: 3px 0 0;
+    background: url("../../images/lp_delete.png") no-repeat scroll 0 0;
+}
+.blacktri.perso_rule_condition_del:hover span.bt_icon{
+    background: url("../../images/lp_delete.png") no-repeat scroll 0 -22px;
+}
+
+.perso_rule_btn_container .disabled.perso_rule_btn{
+    background: #BFBFBF;
+    color: #FFFFFF;
+    cursor: default;
+}
+.disabled#perso_rule_editor_close{
+    opacity: 0.5;
+    cursor: default;
+}

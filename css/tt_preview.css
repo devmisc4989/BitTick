@@ -1,0 +1,27 @@
+ul.bt_variants_menu{
+    display:none;
+    list-style:none !important;
+    background-color:#f7f7f7 !important;
+    padding:5px;
+    border:2px solid #8fb001 !important;
+	min-width:150px;
+	border-radius:4px;
+}
+ul.bt_variants_menu li {
+    list-style:none;
+    cursor:pointer;
+    padding:2px 5px;
+	font-size:12px !important;
+	line-height:14px !important;
+	font-family:Verdana, Geneva, sans-serif !important;
+	background-color:#f7f7f7 !important;
+	font-weight:normal;
+	display:block;
+}
+ul.bt_variants_menu li:hover{
+    background-color:#DDD !important;
+}
+._bt_tt_changed {
+	background-color:#f09c9c !important;
+	position:relative;
+}

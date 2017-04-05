@@ -1,0 +1,213 @@
+div.datepicker {
+    display: none;
+    position: relative;
+    width: 232px;
+    height: 147px;
+    top: 0;
+    left: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    cursor: default;
+}
+
+.datepickerBorderT, .datepickerBorderB, .datepickerBorderL, .datepickerBorderR,
+.datepickerBorderTL, .datepickerBorderTR, .datepickerBorderBL, .datepickerBorderBR{
+    display: none;
+}
+
+div.datepicker table thead a {
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    color: white;
+}
+
+div.datepicker thead a:hover {
+    text-decoration: underline;
+}
+
+div.datepicker .datepickerMonth {
+    text-align: center;
+}
+
+div.datepicker table.datepickerViewDays tr{
+    color: #666666;
+}
+
+.datepickerContainer {
+    position: absolute;
+}
+
+.datepickerHidden {
+    display: none;
+}
+
+div.datepicker table {
+    width: 232px;
+    border-collapse:separate;
+}
+
+div.datepicker a {
+    font-weight: normal;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.lpc_timeframe .datepickerDays td:hover:not(.datepickerDisabled),
+.lpc_timeframe .datepickerMonths td:hover,
+.lpc_timeframe .datepickerYears td:hover {
+    background-color: #8DBA2B;
+}
+
+.datepickerViewDays .datepickerDays td {
+    height: 20px;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+.datepickerDoW th {
+    height: 20px;
+    background-color: white;
+    font-weight: normal;
+    text-align: center;
+    line-height: 20px;
+    color: #666666;
+}
+
+.datepickerDays a,
+.datepickerMonths a,
+.datepickerYears a,
+.datepickerDays th,
+.datepickerDays td {
+    margin: 0;
+    padding: 0;
+    color: #666666;
+}
+
+.datepickerDays a,
+.datepickerMonths a,
+.datepickerYears a {
+    display: block;
+}
+
+.datepickerDays th,
+.datepickerDays td{
+    width: 20px;
+    height: 20px;
+}
+
+div.datepicker .datepickerDays a,
+div.datepicker .datepickerDays a span,
+div.datepicker .datepickerMonths a,
+div.datepicker .datepickerMonths a span,
+div.datepicker .datepickerYears a,
+div.datepicker .datepickerYears a span{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 20px;
+}
+div.datepicker .datepickerMonths a,
+div.datepicker .datepickerMonths a span,
+div.datepicker .datepickerYears a,
+div.datepicker .datepickerYears a span{
+    line-height: 35px;
+}
+
+.datepickerYears a,
+.datepickerMonths a{
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+}
+
+.datepickerYears a {
+    width: 41px;
+}
+
+tbody.datepickerDays td.datepickerSelected,
+tbody.datepickerYears td.datepickerSelected,
+tbody.datepickerMonths td.datepickerSelected{
+    background: #8DBA2B;
+}
+
+.datepickerSpace div {
+    width: 20px;
+}
+
+.datepickerGoNext,
+.datepickerGoPrev,
+.datepickerMonth {
+    background: #666666;
+}
+
+.datepickerGoNext a,
+.datepickerGoPrev a,
+.datepickerMonth a {
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+}
+.datepickerGoNext a {
+    float: right;
+    width: 20px;
+    background: url('../images/next.png') no-repeat center center;
+}
+.datepickerGoNext a:hover {
+    background: url('../images/next_hover.png') no-repeat center center;
+}
+
+.datepickerGoPrev a {
+    float: left;
+    width: 20px;
+    background: url('../images/prev.png') no-repeat center center;
+}
+.datepickerGoPrev a:hover {
+    background: url('../images/prev_hover.png') no-repeat center center;
+}
+
+table.datepickerViewDays tbody.datepickerMonths,
+table.datepickerViewDays tbody.datepickerYears {
+    display: none;
+}
+
+table.datepickerViewMonths tbody.datepickerDays,
+table.datepickerViewMonths tbody.datepickerYears{
+    display: none;
+}
+
+table.datepickerViewYears tbody.datepickerDays,
+table.datepickerViewYears tbody.datepickerMonths {
+    display: none;
+}
+
+table.datepickerViewMonths tr.datepickerDoW {
+    visibility: hidden;
+}
+div.datepicker .datepickerViewYears .datepickerDoW{
+    visibility: hidden;
+}
+
+td.datepickerDisabled a,
+td.datepickerDisabled.datepickerNotInMonth a {
+    color: #cccccc;
+}
+
+td.datepickerNotInMonth a {
+    color: #8888A8;
+}
+
+td.datepickerDisabled td:hover,
+td.datepickerDisabled a:hover {
+    cursor: default;
+}
+
+th.datepickerWeek a {
+    font-weight: bold;
+    color: #3d3d3d;
+    text-align: center;
+}

@@ -1,0 +1,58 @@
+@charset "utf-8";
+
+#editor_page .editor_overlayer {
+	/*z-index: 991503;*/
+	z-index: 1503;
+}
+#editor_page .editor_proxy {
+	/*z-index: 991502;*/
+	z-index: 1502;
+}
+#editor_page .editor_proxy .editor_proxy_scroll {
+	/*z-index: 991502;*/
+	z-index: 1502;
+}
+#editor_page .editor_proxy .editor_element_outline {
+	/*z-index: 991501;*/
+	z-index: 1501;
+}
+#editor_page .editor_proxy .editor_element_outline_changed {
+	/*z-index: 991501;*/
+	z-index: 1501;
+}
+#editor_page .editor_action {
+	/*z-index: 991503;*/
+	z-index: 1503;
+}
+#editor_page .editor_popup_loading, .editor_popup {
+	/*z-index: 991504;	*/
+	z-index: 1504;
+}
+#editor_page .preload {
+	z-index: 9999;
+}
+#editor_page #error_window {
+	/*z-index: 999999;*/
+	z-index: 2000;
+}
+#editor_page .tabs_main {
+	/*z-index: 991504;*/
+	z-index: 2000;
+}
+
+#editor_page .zone_tabs .menu_container {
+	/*z-index: 999999;*/
+	z-index: 2000;
+}
+
+/* ACTION MENU */
+#editor_page .action_menu {
+	z-index: 9999;
+}
+/* ACTION MENU END */
+
+
+#editor_page #frame_editor {
+	/*z-index: 991501;*/
+	z-index: 1501;
+}

@@ -1,0 +1,30 @@
+/* CSS Document */
+
+
+
+.button_footer {
+position:relative;
+	width: 319px;
+	margin: 0 auto;
+	display:block;
+	top:-50px;
+}
+.button_footer a {
+	width: 319px;
+	height: 44px;
+	background-image: url(../images/button_footer_off.jpg);
+	background-repeat: no-repeat;
+	display: block;
+	color: #FFF;
+	padding-top: 10px;
+	font-size: 20px;
+	font-weight: normal;
+	text-shadow: 0 1px 0 #000000;
+	text-decoration: none;
+	text-align: center;
+
+}
+.button_footer a:hover {
+	background-image: url(../images/button_footer_on.jpg);
+}
+

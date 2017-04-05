@@ -1,0 +1,135 @@
+{
+    "id": 1,
+    "label": "Cool Template",
+    "areas": [
+        {
+            "selector": {
+                "type": "pulldown",
+                "name": "sel_start",
+                "value": "1",
+                "options": [
+                    {
+                        "value": "1",
+                        "label": "String value attribute"
+                    },
+                    {
+                        "value": "2",
+                        "label": "Int value attribute"
+                    }
+                ],
+                "label": "Select the configuration field"
+            },
+            "blocks": [
+                {
+                    "attr": [
+                        {
+                        "name": "mystringattribute_string",
+                        "type": "string",
+                        "default": "Example for string",
+                        "value": "Example for string",
+                        "label": "Enter a string value",
+                        "display_val": "1"
+                    },
+
+                        {
+                            "name": "myintattribute_int",
+                            "type": "int",
+                            "default": "42",
+                            "value": "42",
+                            "label": "Enter an integer value",
+                            "display_val": "2"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "label": "Area Label text from JSON",
+            "blocks": [{
+                "attr": [
+                    {
+                        "label": "Skin",
+                        "name": "sel_skin_int",
+                        "value": 1,
+                        "type": "enum",
+                        "db_type": "int",
+                        "options": [
+                            {
+                                "label": "Metal",
+                                "value": 1
+                            },
+                            {
+                                "label": "Liquid",
+                                "value": 2
+                            },
+                            {
+                                "label": "Blue",
+                                "value": 3
+                            }
+                        ]
+                    }
+                ]
+            }]
+        },
+        {
+            "blocks": [{
+                "attr": [
+                    {
+                        "label": "Headline",
+                        "name": "form_headline_string",
+                        "value": "Enter your email address to get our latest news and promotions",
+                        "type": "string",
+                        "db_type": "string"
+                    }
+                ]
+            }]
+        },
+        {
+            "blocks": [{
+                "attr": [
+                    {
+                        "label": "A Text field",
+                        "name": "text_1_text",
+                        "value": "First line\n\nSecond line",
+                        "type": "text",
+                        "db_type": "text"
+                    }
+                ]
+            }]
+        },
+        {
+            "selector": {
+                "type": "checkbox",
+                "label": "Show Button?",
+                "name": "checkbox_1",
+                "value": false
+            },
+            "blocks": [{
+                "attr": [
+                    {
+                        "label": "Button Text",
+                        "name": "form_buttontext_string",
+                        "value": "Send",
+                        "type": "string",
+                        "db_type": "string",
+                        "depends_on": "checkbox_1",
+                        "display_val":true
+                    }
+                ]
+            }]
+        },
+        {
+            "blocks": [{
+                "attr": [
+                    {
+                        "label": "Input Placeholder",
+                        "name": "form_inputtext_string",
+                        "value": "your email address...",
+                        "type": "string",
+                        "db_type": "string"
+                    }
+                ]
+            }]
+        }
+    ]
+}

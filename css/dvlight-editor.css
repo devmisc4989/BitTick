@@ -1,0 +1,23 @@
+@CHARSET "UTF-8";
+
+#BTFactorEditPopup .BtEditorButton, #BTFactorEditPopup .button, #BTMoveElementControls .BtEditorButton {
+    height: 38px;
+	border: 1px #464646 solid;
+	background: url(../images/button-blue-bg.png);
+	color: #fff !important;
+	border-radius: 0;
+}
+
+#BTMoveElementControls .BtEditorButton:hover, #BTFactorEditPopup .BtEditorButton:hover {
+	border: 1px #aaa solid;
+	background-position: 0 0;
+	color: #fff !important;
+}
+
+#BTFactorEditPopup .BTEditorModes a.selected {
+    color: #057cc2 !important;
+}
+
+.BTjQueryPath a {
+	color: #057cc2 !important;
+}

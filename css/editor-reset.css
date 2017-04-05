@@ -1,0 +1,467 @@
+/* RESET */
+
+/**
+* Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+* http://cssreset.com
+*/
+.nicEdit-main html, .nicEdit-main body, .nicEdit-main div, .nicEdit-main span, .nicEdit-main applet, .nicEdit-main object, .nicEdit-main iframe,
+.nicEdit-main h1, .nicEdit-main h2, .nicEdit-main h3, .nicEdit-main h4, .nicEdit-main h5, .nicEdit-main h6, .nicEdit-main p, .nicEdit-main blockquote, .nicEdit-main pre,
+.nicEdit-main a, .nicEdit-main abbr, .nicEdit-main acronym, .nicEdit-main address, .nicEdit-main big, .nicEdit-main cite, .nicEdit-main code,
+.nicEdit-main del, .nicEdit-main dfn, .nicEdit-main em, .nicEdit-main img, .nicEdit-main ins, .nicEdit-main kbd, .nicEdit-main q, .nicEdit-main s, .nicEdit-main samp,
+.nicEdit-main small, .nicEdit-main strike, .nicEdit-main strong, .nicEdit-main sub, .nicEdit-main sup, .nicEdit-main tt, .nicEdit-main var,
+.nicEdit-main b, .nicEdit-main u, .nicEdit-main i, .nicEdit-main center,
+.nicEdit-main dl, .nicEdit-main dt, .nicEdit-main dd, .nicEdit-main ol, .nicEdit-main ul, .nicEdit-main li,
+.nicEdit-main fieldset, .nicEdit-main form, .nicEdit-main label, .nicEdit-main legend,
+.nicEdit-main table, .nicEdit-main caption, .nicEdit-main tbody, .nicEdit-main tfoot, .nicEdit-main thead, .nicEdit-main tr, .nicEdit-main th, .nicEdit-main td,
+.nicEdit-main article, .nicEdit-main aside, .nicEdit-main canvas, .nicEdit-main details, .nicEdit-main embed,
+.nicEdit-main figure, .nicEdit-main figcaption, .nicEdit-main footer, .nicEdit-main header, .nicEdit-main hgroup,
+.nicEdit-main menu, .nicEdit-main nav, .nicEdit-main output, .nicEdit-main ruby, .nicEdit-main section, .nicEdit-main summary,
+.nicEdit-main time, .nicEdit-main mark, .nicEdit-main audio, .nicEdit-main video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+.nicEdit-main article, .nicEdit-main aside, .nicEdit-main details, .nicEdit-main figcaption, .nicEdit-main figure,
+.nicEdit-main footer, .nicEdit-main header, .nicEdit-main hgroup, .nicEdit-main menu, .nicEdit-main nav, .nicEdit-main section {
+	
+}
+.nicEdit-main body {
+	
+}
+.nicEdit-main ol, .nicEdit-main ul {
+	
+}
+.nicEdit-main blockquote, .nicEdit-main q {
+	
+}
+.nicEdit-main blockquote:before, .nicEdit-main blockquote:after,
+.nicEdit-main q:before, .nicEdit-main q:after {
+	content: '';
+	content: none;
+}
+.nicEdit-main table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/*! normalize.css v2.1.3 | MIT License | git.io/normalize */
+
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+
+.nicEdit-main article,
+.nicEdit-main aside,
+.nicEdit-main details,
+.nicEdit-main figcaption,
+.nicEdit-main figure,
+.nicEdit-main footer,
+.nicEdit-main header,
+.nicEdit-main hgroup,
+.nicEdit-main main,
+.nicEdit-main nav,
+.nicEdit-main section,
+.nicEdit-main summary {
+    display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+
+.nicEdit-main audio,
+.nicEdit-main canvas,
+.nicEdit-main video {
+    display: inline-block;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+.nicEdit-main audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9.
+ * Hide the `template` element in IE, Safari, and Firefox < 22.
+ */
+
+.nicEdit-main [hidden],
+.nicEdit-main template {
+    display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+.nicEdit-main html {
+    font-family: sans-serif; /* 1 */
+    -ms-text-size-adjust: 100%; /* 2 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+
+.nicEdit-main body {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+.nicEdit-main a {
+    background: transparent;
+	color:#000;
+	text-decoration:underline;
+}
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+
+.nicEdit-main a:focus {
+    outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+.nicEdit-main a:active,
+.nicEdit-main a:hover {
+    outline: 0;
+	text-decoration:underline;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+
+.nicEdit-main h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+
+.nicEdit-main abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+
+.nicEdit-main b,
+.nicEdit-main strong {
+    font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+
+.nicEdit-main dfn {
+    font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+.nicEdit-main hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+.nicEdit-main mark {
+    background: #ff0;
+    color: #000;
+}
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+
+.nicEdit-main code,
+.nicEdit-main kbd,
+.nicEdit-main pre,
+.nicEdit-main samp {
+    font-family: monospace, serif;
+    font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+
+.nicEdit-main pre {
+    white-space: pre-wrap;
+}
+
+/**
+ * Set consistent quote types.
+ */
+
+.nicEdit-main q {
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+.nicEdit-main small {
+    font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+.nicEdit-main sub,
+.nicEdit-main sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+.nicEdit-main sup {
+    top: -0.5em;
+}
+
+.nicEdit-main sub {
+    bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+
+.nicEdit-main img {
+    border: 0;
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+
+.nicEdit-main svg:not(:root) {
+    overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+
+.nicEdit-main figure {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+.nicEdit-main fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+.nicEdit-main legend {
+    border: 0; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+
+.nicEdit-main button,
+.nicEdit-main input,
+.nicEdit-main select,
+.nicEdit-main textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 2 */
+    margin: 0; /* 3 */
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+.nicEdit-main button,
+.nicEdit-main input {
+    line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+
+.nicEdit-main button,
+.nicEdit-main select {
+    text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+.nicEdit-main button,
+.nicEdit-main html input[type="button"], /* 1 */
+.nicEdit-main input[type="reset"],
+.nicEdit-main input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+.nicEdit-main button[disabled],
+.nicEdit-main html input[disabled] {
+    cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+
+.nicEdit-main input[type="checkbox"],
+.nicEdit-main input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+.nicEdit-main input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+
+.nicEdit-main input[type="search"]::-webkit-search-cancel-button,
+.nicEdit-main input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+.nicEdit-main button::-moz-focus-inner,
+.nicEdit-main input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+
+.nicEdit-main textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+.nicEdit-main table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+
+.nicEdit-main strike {
+	text-decoration:line-through;
+}
